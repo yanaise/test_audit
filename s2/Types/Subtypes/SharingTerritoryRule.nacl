@@ -1,0 +1,31 @@
+type s2.SharingTerritoryRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string accessLevel {
+  }
+  s2.AccountSharingRuleSettings accountSettings {
+  }
+  string description {
+  }
+  string label {
+  }
+  s2.SharedTo sharedTo {
+  }
+  s2.SharedTo sharedFrom {
+  }
+  metadataType = "SharingTerritoryRule"
+}

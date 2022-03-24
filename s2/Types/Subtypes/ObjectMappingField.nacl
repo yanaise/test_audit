@@ -1,0 +1,29 @@
+type s2.ObjectMappingField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string inputField {
+    foreignKeyDomain = [
+      s2.CustomField,
+      "CustomFieldDataColumn",
+    ]
+  }
+  string outputField {
+    foreignKeyDomain = [
+      s2.CustomField,
+      "CustomFieldDataColumn",
+    ]
+  }
+  metadataType = "ObjectMappingField"
+}

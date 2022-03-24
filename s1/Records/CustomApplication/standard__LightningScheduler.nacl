@@ -1,0 +1,21 @@
+s1.CustomApplication standard__LightningScheduler {
+  fullName = "standard__LightningScheduler"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Lightning Scheduler Setup"
+  navType = "Standard"
+  tabs = [
+    "standard-LightningSchedulerSetupAssistant",
+    "standard-ServiceTerritory",
+    "standard-ServiceResource",
+    "standard-WorkTypeGroup",
+    "standard-WorkType",
+    "standard-OperatingHours",
+    "standard-ServiceAppointment",
+    s1.CustomTab.instance.AAAPets2AAA__c,
+  ]
+  uiType = "Lightning"
+}

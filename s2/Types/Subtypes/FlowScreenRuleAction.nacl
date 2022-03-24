@@ -1,0 +1,25 @@
+type s2.FlowScreenRuleAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string attribute {
+  }
+  string fieldReference {
+  }
+  s2.FlowElementReferenceOrValue value {
+  }
+  metadataType = "FlowScreenRuleAction"
+}

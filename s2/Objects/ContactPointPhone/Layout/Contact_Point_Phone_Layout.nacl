@@ -1,0 +1,88 @@
+s2.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
+  fullName = "ContactPointPhone-Contact Point Phone Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.IsPrimary
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointPhone.field.TelephoneNumber
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.AreaCode
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.PhoneType
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.IsPersonalPhone
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.IsSmsCapable
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.ParentId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.ExtensionNumber
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.IsBusinessPhone
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointPhone.field.IsFaxCapable
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ContactPoint",
+        "DataUsePurpose",
+        "PrivacyConsentStatus",
+      ]
+      relatedList = "ContactPointConsents"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.ContactPointPhone,
+  ]
+}

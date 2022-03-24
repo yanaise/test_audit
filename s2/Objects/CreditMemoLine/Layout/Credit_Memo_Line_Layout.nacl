@@ -1,0 +1,165 @@
+s2.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
+  fullName = "CreditMemoLine-Credit Memo Line Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.CreditMemoLine.field.CreditMemoId
+            },
+            {
+              behavior = "Required"
+              field = s2.CreditMemoLine.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.EndDate
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.RelatedLineId
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.ReferenceEntityItemType
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.ReferenceEntityItemTypeCode
+            },
+            {
+              behavior = "Required"
+              field = s2.CreditMemoLine.field.Type
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "CreditMemoLineAmountInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.ChargeAmount
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.AdjustmentAmount
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.TaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "TaxInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.TaxEffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.TaxName
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.TaxRate
+            },
+            {
+              behavior = "Edit"
+              field = s2.CreditMemoLine.field.TaxCode
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "SystemInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.CreditMemoLine.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = s2.CreditMemoLine.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.CreditMemoLine.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = s2.CreditMemoLine.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.CreditMemoLine,
+  ]
+}

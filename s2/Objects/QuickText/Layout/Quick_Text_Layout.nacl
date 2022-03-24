@@ -1,0 +1,55 @@
+s2.Layout QuickText_Quick_Text_Layout@bss {
+  fullName = "QuickText-Quick Text Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.QuickText.field.Name
+            },
+            {
+              behavior = "Required"
+              field = s2.QuickText.field.Message
+            },
+            {
+              behavior = "Edit"
+              field = s2.QuickText.field.Category
+            },
+            {
+              behavior = "Edit"
+              field = s2.QuickText.field.Channel
+            },
+            {
+              behavior = "Edit"
+              field = s2.QuickText.field.IsInsertable
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "IsInsertable",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.QuickText,
+  ]
+}

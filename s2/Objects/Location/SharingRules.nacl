@@ -1,0 +1,6 @@
+s2.SharingRules Location {
+  fullName = "Location"
+  _parent = [
+    s2.Location,
+  ]
+}

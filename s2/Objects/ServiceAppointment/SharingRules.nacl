@@ -1,0 +1,6 @@
+s2.SharingRules ServiceAppointment {
+  fullName = "ServiceAppointment"
+  _parent = [
+    s2.ServiceAppointment,
+  ]
+}

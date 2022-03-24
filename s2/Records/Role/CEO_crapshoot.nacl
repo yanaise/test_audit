@@ -1,0 +1,9 @@
+s2.Role CEO_crapshoot {
+  fullName = "CEO_crapshoot"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "CEO_crapshoot icecrem"
+  mayForecastManagerShare = false
+  name = "CEO_crapshoot"
+  opportunityAccessLevel = "Edit"
+}

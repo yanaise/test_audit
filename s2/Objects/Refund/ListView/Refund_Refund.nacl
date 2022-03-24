@@ -1,0 +1,8 @@
+s2.ListView Refund_Refund {
+  fullName = "Refund.Refund"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    s2.Refund,
+  ]
+}

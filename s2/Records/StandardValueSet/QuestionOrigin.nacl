@@ -1,0 +1,4 @@
+s2.StandardValueSet QuestionOrigin {
+  fullName = "QuestionOrigin"
+  sorted = false
+}

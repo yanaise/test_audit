@@ -1,0 +1,70 @@
+type s2.Community {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean active {
+  }
+  string chatterAnswersFacebookSsoUrl {
+  }
+  string communityFeedPage {
+  }
+  string dataCategoryName {
+  }
+  string description {
+  }
+  string emailFooterDocument {
+    foreignKeyDomain = [
+      s2.Document,
+    ]
+  }
+  string emailHeaderDocument {
+    foreignKeyDomain = [
+      s2.Document,
+    ]
+  }
+  string emailNotificationUrl {
+  }
+  boolean enableChatterAnswers {
+  }
+  boolean enablePrivateQuestions {
+  }
+  string expertsGroup {
+    foreignKeyDomain = [
+      s2.Queue,
+    ]
+  }
+  serviceid fullName {
+  }
+  string portal {
+    foreignKeyDomain = [
+      "Portal",
+    ]
+  }
+  s2.ReputationLevels reputationLevels {
+  }
+  boolean showInPortal {
+  }
+  string site {
+    foreignKeyDomain = [
+      s2.CustomSite,
+    ]
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "community"
+  dirName = "communities"
+  metadataType = "Community"
+}

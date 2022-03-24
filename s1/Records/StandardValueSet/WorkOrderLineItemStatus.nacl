@@ -1,0 +1,4 @@
+s1.StandardValueSet WorkOrderLineItemStatus {
+  fullName = "WorkOrderLineItemStatus"
+  sorted = false
+}

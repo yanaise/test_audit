@@ -1,0 +1,29 @@
+type s2.CustomHelpMenuSection {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  s2.CustomHelpMenuItem customHelpMenuItems {
+  }
+  string masterLabel {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "customHelpMenuSection"
+  dirName = "customHelpMenuSections"
+  metadataType = "CustomHelpMenuSection"
+}

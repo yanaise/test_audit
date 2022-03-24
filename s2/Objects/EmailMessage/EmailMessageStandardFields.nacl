@@ -1,0 +1,407 @@
+type s2.EmailMessage {
+  serviceid Id {
+    apiName = "EmailMessage.Id"
+    label = "Email Message ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Lookup ParentId {
+    apiName = "EmailMessage.ParentId"
+    label = "Case ID"
+    referenceTo = [
+      s2.Case,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Parent"
+    queryable = true
+  }
+  s2.Lookup ActivityId {
+    apiName = "EmailMessage.ActivityId"
+    label = "Activity ID"
+    referenceTo = [
+      s2.Task,
+    ]
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "EmailMessage.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "EmailMessage.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "EmailMessage.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "EmailMessage.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "EmailMessage.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.LongTextArea TextBody {
+    apiName = "EmailMessage.TextBody"
+    label = "Text Body"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  s2.LongTextArea HtmlBody {
+    apiName = "EmailMessage.HtmlBody"
+    label = "HTML Body"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  s2.LongTextArea Headers {
+    apiName = "EmailMessage.Headers"
+    label = "Headers"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  s2.Text Subject {
+    apiName = "EmailMessage.Subject"
+    label = "Subject"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 3000
+    queryable = true
+  }
+  s2.Text FromName {
+    apiName = "EmailMessage.FromName"
+    label = "From Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 1000
+    queryable = true
+  }
+  s2.Email FromAddress {
+    apiName = "EmailMessage.FromAddress"
+    label = "From Address"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  s2.Picklist ValidatedFromAddress {
+    apiName = "EmailMessage.ValidatedFromAddress"
+    label = "From"
+    valueSet = [
+      {
+        fullName = "yanai.sened+4@salto.io"
+        default = false
+        label = "Yusuf Sarid <yanai.sened+4@salto.io>"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Text ToAddress {
+    apiName = "EmailMessage.ToAddress"
+    label = "To Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 4000
+    queryable = true
+  }
+  s2.Text CcAddress {
+    apiName = "EmailMessage.CcAddress"
+    label = "CC Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 4000
+    queryable = true
+  }
+  s2.Text BccAddress {
+    apiName = "EmailMessage.BccAddress"
+    label = "BCC Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 4000
+    queryable = true
+  }
+  s2.Checkbox Incoming {
+    apiName = "EmailMessage.Incoming"
+    label = "Is Incoming"
+    defaultValue = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Checkbox HasAttachment {
+    apiName = "EmailMessage.HasAttachment"
+    label = "Has Attachment"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Picklist Status {
+    apiName = "EmailMessage.Status"
+    label = "Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "0"
+        default = false
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "1"
+        default = false
+        label = "Read"
+        isActive = true
+      },
+      {
+        fullName = "2"
+        default = false
+        label = "Replied"
+        isActive = true
+      },
+      {
+        fullName = "3"
+        default = false
+        label = "Sent"
+        isActive = true
+      },
+      {
+        fullName = "4"
+        default = false
+        label = "Forwarded"
+        isActive = true
+      },
+      {
+        fullName = "5"
+        default = false
+        label = "Draft"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.DateTime MessageDate {
+    apiName = "EmailMessage.MessageDate"
+    label = "Message Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "EmailMessage.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup ReplyToEmailMessageId {
+    apiName = "EmailMessage.ReplyToEmailMessageId"
+    label = "Email Message ID"
+    referenceTo = [
+      s2.EmailMessage,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ReplyToEmailMessage"
+    queryable = true
+  }
+  s2.Checkbox IsExternallyVisible {
+    apiName = "EmailMessage.IsExternallyVisible"
+    label = "Is Externally Visible"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text MessageIdentifier {
+    apiName = "EmailMessage.MessageIdentifier"
+    label = "Message ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 765
+    queryable = true
+  }
+  s2.Text ThreadIdentifier {
+    apiName = "EmailMessage.ThreadIdentifier"
+    label = "Thread ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 765
+    queryable = true
+  }
+  s2.Checkbox IsClientManaged {
+    apiName = "EmailMessage.IsClientManaged"
+    label = "Is Client Managed"
+    defaultValue = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Lookup RelatedToId {
+    apiName = "EmailMessage.RelatedToId"
+    label = "Related To ID"
+    referenceTo = [
+      s2.Account,
+      s2.Asset,
+      s2.AssetRelationship,
+      s2.AssignedResource,
+      s2.Campaign,
+      s2.Case,
+      s2.CommSubscriptionConsent,
+      s2.ContactRequest,
+      s2.Contract,
+      s2.CreditMemo,
+      s2.Image,
+      s2.Invoice,
+      s2.LegalEntity,
+      "ListEmail",
+      s2.Location,
+      s2.OperatingHoursHoliday,
+      s2.Opportunity,
+      s2.Order,
+      s2.PartyConsent,
+      s2.ProcessException,
+      s2.Product2,
+      s2.ResourceAbsence,
+      s2.ReturnOrder,
+      s2.ReturnOrderLineItem,
+      s2.ServiceAppointment,
+      s2.ServiceResource,
+      s2.Shift,
+      s2.Solution,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "RelatedTo"
+    queryable = true
+  }
+  s2.Checkbox IsTracked {
+    apiName = "EmailMessage.IsTracked"
+    label = "Is Tracked"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Checkbox IsOpened {
+    apiName = "EmailMessage.IsOpened"
+    label = "Opened?"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime FirstOpenedDate {
+    apiName = "EmailMessage.FirstOpenedDate"
+    label = "First Opened"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.DateTime LastOpenedDate {
+    apiName = "EmailMessage.LastOpenedDate"
+    label = "Last Opened"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Checkbox IsBounced {
+    apiName = "EmailMessage.IsBounced"
+    label = "Bounced?"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Lookup EmailTemplateId {
+    apiName = "EmailMessage.EmailTemplateId"
+    label = "Email Template ID"
+    referenceTo = [
+      "EmailTemplate",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "EmailTemplate"
+    queryable = true
+  }
+  s2.Unknown IsPrivateDraft {
+    apiName = "EmailMessage.IsPrivateDraft"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown MessageSize {
+    apiName = "EmailMessage.MessageSize"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

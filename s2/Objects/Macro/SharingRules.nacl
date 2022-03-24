@@ -1,0 +1,6 @@
+s2.SharingRules Macro {
+  fullName = "Macro"
+  _parent = [
+    s2.Macro,
+  ]
+}

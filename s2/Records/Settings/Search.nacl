@@ -1,0 +1,400 @@
+s2.SearchSettings {
+  fullName = "Search"
+  documentContentSearchEnabled = true
+  enableAdvancedSearchInAlohaSidebar = false
+  enablePersonalTagging = false
+  enablePublicTagging = false
+  enableQuerySuggestionPigOn = "false"
+  enableSalesforceGeneratedSynonyms = true
+  enableSetupSearch = true
+  enableSuggestArticlesLinksOnly = false
+  optimizeSearchForCJKEnabled = false
+  recentlyViewedUsersForBlankLookupEnabled = true
+  searchSettingsByObject = {
+    searchSettingsByObject = [
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AAAKareokeAAA__c
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AAAPetAAA__c
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AAAPets2AAA__c
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Account
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Activity
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Asset
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AssetAction
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AssetActionSource
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AssetRelationship
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AssetStatePeriod
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Attachment"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AuthorizationForm
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AuthorizationFormConsent
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AuthorizationFormDataUse
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.AuthorizationFormText
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Book__c
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Calendar"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Campaign
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Case
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "CaseComment"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.CollaborationGroup
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.CommSubscription
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.CommSubscriptionChannelType
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.CommSubscriptionConsent
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ConsumptionSchedule
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Contact
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContactPointAddress
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContactPointConsent
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContactPointEmail
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContactPointPhone
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContactPointTypeConsent
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.ContentVersion
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Contract
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.CreditMemo
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.DandBCompany
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.DataUseLegalBasis
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.DataUsePurpose
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Document"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.EmailMessage
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.EngagementChannelType
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "EnhancedLetterhead"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Folder"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Idea
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Individual
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Lead
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.LegalEntity
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "ListEmail"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Location
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Macro
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.MessagingEndUser
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.MessagingSession
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Note"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Opportunity
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Order
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.PartyConsent
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Pricebook2
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.PricebookEntry
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Product2
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.QuickText
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Recommendation
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = "Report"
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.Solution
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = s2.User
+        resultsPerPageCount = 25
+      },
+    ]
+  }
+  sidebarAutoCompleteEnabled = true
+  sidebarDropDownListEnabled = true
+  sidebarLimitToItemsIOwnCheckboxEnabled = true
+  singleSearchResultShortcutEnabled = true
+  spellCorrectKnowledgeSearchEnabled = false
+}

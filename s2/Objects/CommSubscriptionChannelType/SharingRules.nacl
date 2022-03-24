@@ -1,0 +1,6 @@
+s2.SharingRules CommSubscriptionChannelType {
+  fullName = "CommSubscriptionChannelType"
+  _parent = [
+    s2.CommSubscriptionChannelType,
+  ]
+}

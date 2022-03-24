@@ -1,0 +1,36 @@
+s2.ConnectedApp SaltoApp9901 {
+  fullName = "SaltoApp9901"
+  contactEmail = "yanai.sened+4@salto.io"
+  description = "Salto oauth app"
+  label = "SaltoApp9901"
+  oauthConfig = {
+    callbackUrl = "http://localhost:8080"
+    consumerKey = "3MVG9l2zHsylwlpSWZdiMzIJXeW_V5Uv.OPXUAbA.vgF5aXlfzEr2FdyAJvDdALmdKlUnINpp9zv.mPz4Ygps"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Basic",
+      "Api",
+      "Web",
+      "Full",
+      "Chatter",
+      "CustomApplications",
+      "RefreshToken",
+      "OpenID",
+      "CustomPermissions",
+      "Wave",
+      "Eclair",
+      "Pardot",
+      "Lightning",
+      "Content",
+      "CDPIngest",
+      "CDPProfile",
+      "CDPQuery",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

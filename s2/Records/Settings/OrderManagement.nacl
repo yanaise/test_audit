@@ -1,0 +1,4 @@
+s2.OrderManagementSettings {
+  fullName = "OrderManagement"
+  enableOrderManagement = false
+}

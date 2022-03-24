@@ -1,0 +1,6 @@
+s2.SharingRules ServiceTerritory {
+  fullName = "ServiceTerritory"
+  _parent = [
+    s2.ServiceTerritory,
+  ]
+}

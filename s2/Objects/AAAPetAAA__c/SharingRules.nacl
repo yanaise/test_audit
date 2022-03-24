@@ -1,0 +1,6 @@
+s2.SharingRules AAAPetAAA__c {
+  fullName = "AAAPetAAA__c"
+  _parent = [
+    s2.AAAPetAAA__c,
+  ]
+}

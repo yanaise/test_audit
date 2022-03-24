@@ -1,0 +1,129 @@
+s2.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+    {
+      name = s2.CustomApplication.instance.standard__Platform
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Sales
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Service
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Marketing
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__ServiceConsole
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__AppLauncher
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Community
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Sites
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Chatter
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Content
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__Insights
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningSalesConsole
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningService
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningSales
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningInstrumentation
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__SalesforceCMS
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningBolt
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__LightningScheduler
+      type = "CustomApplication"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__AllTabSet
+      type = "CustomApplication"
+    },
+    {
+      name = s2.ConnectedApp.instance.SaltoApp9901
+      type = "ConnectedApp"
+    },
+    {
+      name = s2.ConnectedApp.instance.whatever
+      type = "ConnectedApp"
+    },
+    {
+      name = "Dataloader_Bulk"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Dataloader_Partner"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_IDE"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_Migration_Tool"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Mobile_Dashboards"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Touch"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_for_Outlook"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Workbench"
+      type = "ConnectedApp"
+    },
+    {
+      name = s2.CustomApplication.instance.standard__QueueManagement
+      type = "CustomApplication"
+    },
+    {
+      name = s2.ConnectedApp.instance.salto1989
+      type = "ConnectedApp"
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+s2.ListView AAAPets2AAA__c_All {
+  fullName = "AAAPets2AAA__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    s2.AAAPets2AAA__c,
+  ]
+}

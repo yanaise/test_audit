@@ -1,0 +1,158 @@
+type s2.CartCheckoutSession {
+  serviceid Id {
+    apiName = "CartCheckoutSession.Id"
+    label = "Cart Checkout Session ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "CartCheckoutSession.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text Name {
+    apiName = "CartCheckoutSession.Name"
+    label = "Name"
+    _required = true
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "CartCheckoutSession.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "CartCheckoutSession.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "CartCheckoutSession.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "CartCheckoutSession.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "CartCheckoutSession.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup WebCartId {
+    apiName = "CartCheckoutSession.WebCartId"
+    label = "Cart ID"
+    _required = true
+    referenceTo = [
+      s2.WebCart,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "WebCart"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text State {
+    apiName = "CartCheckoutSession.State"
+    label = "State"
+    _required = true
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+  }
+  s2.Text NextState {
+    apiName = "CartCheckoutSession.NextState"
+    label = "Next State"
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+  }
+  s2.Checkbox IsProcessing {
+    apiName = "CartCheckoutSession.IsProcessing"
+    label = "Is Processing"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  s2.Lookup BackgroundOperationId {
+    apiName = "CartCheckoutSession.BackgroundOperationId"
+    label = "Background Operation ID"
+    referenceTo = [
+      "BackgroundOperation",
+    ]
+    createable = false
+    updateable = true
+    relationshipName = "BackgroundOperation"
+    queryable = true
+  }
+  s2.Checkbox IsArchived {
+    apiName = "CartCheckoutSession.IsArchived"
+    label = "Is Archived"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  s2.Lookup OrderId {
+    apiName = "CartCheckoutSession.OrderId"
+    label = "Order ID"
+    referenceTo = [
+      s2.Order,
+    ]
+    createable = false
+    updateable = true
+    relationshipName = "Order"
+    queryable = true
+  }
+  s2.Checkbox IsError {
+    apiName = "CartCheckoutSession.IsError"
+    label = "Is Error"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+}

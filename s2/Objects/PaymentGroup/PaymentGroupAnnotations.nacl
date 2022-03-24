@@ -1,0 +1,64 @@
+type s2.PaymentGroup {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    hidden_string keyPrefix {
+    }
+    s2.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    s2.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    s2.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    s2.MktDataModelAttributes mktDataModelAttributes {
+    }
+    s2.ProfileSearchLayouts profileSearchLayouts {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    s2.SearchLayouts searchLayouts {
+    }
+    s2.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    hidden_string internalId {
+    }
+  }
+  apiName = "PaymentGroup"
+  metadataType = "CustomObject"
+  label = "Payment Group"
+  compactLayoutAssignment = "SYSTEM"
+  enableFeeds = false
+  externalSharingModel = "ReadWrite"
+}

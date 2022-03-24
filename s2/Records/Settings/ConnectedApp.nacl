@@ -1,0 +1,4 @@
+s2.ConnectedAppSettings {
+  fullName = "ConnectedApp"
+  enableSkipUserProvisioningWizardWelcomePage = false
+}

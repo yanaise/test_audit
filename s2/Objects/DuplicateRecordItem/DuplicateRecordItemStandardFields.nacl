@@ -1,0 +1,111 @@
+type s2.DuplicateRecordItem {
+  serviceid Id {
+    apiName = "DuplicateRecordItem.Id"
+    label = "Duplicate Record Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "DuplicateRecordItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber Name {
+    apiName = "DuplicateRecordItem.Name"
+    label = "Duplicate Record Item Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "DuplicateRecordItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "DuplicateRecordItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "DuplicateRecordItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "DuplicateRecordItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "DuplicateRecordItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup DuplicateRecordSetId {
+    apiName = "DuplicateRecordItem.DuplicateRecordSetId"
+    label = "Duplicate Record Set ID"
+    _required = true
+    referenceTo = [
+      s2.DuplicateRecordSet,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "DuplicateRecordSet"
+    queryable = true
+  }
+  s2.Lookup RecordId {
+    apiName = "DuplicateRecordItem.RecordId"
+    label = "Record ID"
+    _required = true
+    referenceTo = [
+      s2.AAAKareokeAAA__c,
+      s2.AAAListSetupAAA__c,
+      s2.AAAPetAAA__c,
+      s2.AAAPets2AAA__c,
+      s2.AAASetObjectNameAAA__c,
+      s2.Account,
+      s2.Book__c,
+      s2.Contact,
+      s2.Individual,
+      s2.Lead,
+      s2.Second_list_setting__c,
+      s2.SomeHierSetting__c,
+      s2.Weeyah__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Record"
+    queryable = true
+  }
+}

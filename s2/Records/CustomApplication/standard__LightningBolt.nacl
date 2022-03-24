@@ -1,0 +1,15 @@
+s2.CustomApplication standard__LightningBolt {
+  fullName = "standard__LightningBolt"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "LightningBolt"
+  navType = "Standard"
+  tabs = [
+    "standard-LightningBoltHome",
+    s2.CustomTab.instance.AAAPets2AAA__c,
+  ]
+  uiType = "Lightning"
+}

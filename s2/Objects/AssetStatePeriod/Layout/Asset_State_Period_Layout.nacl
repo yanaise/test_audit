@@ -1,0 +1,95 @@
+s2.Layout AssetStatePeriod_Asset_State_Period_Layout@bsss {
+  fullName = "AssetStatePeriod-Asset State Period Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssetStatePeriod.field.AssetStatePeriodNumber
+            },
+            {
+              behavior = "Required"
+              field = s2.AssetStatePeriod.field.StartDate
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssetStatePeriod.field.EndDate
+            },
+            {
+              behavior = "Required"
+              field = s2.AssetStatePeriod.field.Quantity
+            },
+            {
+              behavior = "Required"
+              field = s2.AssetStatePeriod.field.Amount
+            },
+            {
+              behavior = "Required"
+              field = s2.AssetStatePeriod.field.Mrr
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.AssetStatePeriod.field.AssetId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "SystemInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssetStatePeriod.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = s2.AssetStatePeriod.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssetStatePeriod.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = s2.AssetStatePeriod.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.AssetStatePeriod,
+  ]
+}

@@ -1,0 +1,17 @@
+type s1.AAAListSetupAAA__c {
+  s1.Percent BBBNewCustomField__c {
+    apiName = "AAAListSetupAAA__c.BBBNewCustomField__c"
+    label = "BBBNewCustomFieldBBB"
+    _required = true
+    defaultValueFormula = "7"
+    inlineHelpText = "No text can help you now"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    description = "Make sure this description is slightly different to other descriptions"
+    externalId = false
+    trackTrending = false
+  }
+}

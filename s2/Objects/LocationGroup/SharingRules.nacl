@@ -1,0 +1,6 @@
+s2.SharingRules LocationGroup {
+  fullName = "LocationGroup"
+  _parent = [
+    s2.LocationGroup,
+  ]
+}

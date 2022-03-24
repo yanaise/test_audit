@@ -1,0 +1,21 @@
+type s2.MiniLayout {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<string>" fields {
+  }
+  s2.RelatedListItem relatedLists {
+  }
+  metadataType = "MiniLayout"
+}

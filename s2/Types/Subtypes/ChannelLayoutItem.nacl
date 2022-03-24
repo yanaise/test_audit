@@ -1,0 +1,22 @@
+type s2.ChannelLayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string field {
+    foreignKeyDomain = [
+      s2.CustomField,
+    ]
+  }
+  metadataType = "ChannelLayoutItem"
+}

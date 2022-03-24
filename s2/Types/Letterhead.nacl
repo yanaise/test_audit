@@ -1,0 +1,45 @@
+type s2.Letterhead {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  boolean available {
+  }
+  string backgroundColor {
+  }
+  string bodyColor {
+  }
+  s2.LetterheadLine bottomLine {
+  }
+  string description {
+  }
+  s2.LetterheadHeaderFooter footer {
+  }
+  s2.LetterheadHeaderFooter header {
+  }
+  s2.LetterheadLine middleLine {
+  }
+  string name {
+  }
+  s2.LetterheadLine topLine {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "letter"
+  dirName = "letterhead"
+  metadataType = "Letterhead"
+}

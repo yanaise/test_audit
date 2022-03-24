@@ -1,0 +1,4 @@
+s1.StandardValueSet ServiceContractApprovalStatus {
+  fullName = "ServiceContractApprovalStatus"
+  sorted = false
+}

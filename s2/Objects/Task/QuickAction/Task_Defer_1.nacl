@@ -1,0 +1,23 @@
+s2.QuickAction Task_Defer_1@vu {
+  fullName = "Task.Defer_1"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = s2.Task.field.ActivityDate
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "Defer"
+  type = "Update"
+  _parent = [
+    s2.Task,
+  ]
+}

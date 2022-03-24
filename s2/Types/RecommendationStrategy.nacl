@@ -1,0 +1,55 @@
+type s2.RecommendationStrategy {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  s2.StrategyAction actionContext {
+  }
+  string contextRecordType {
+  }
+  string description {
+  }
+  s2.StrategyNodeFilter filter {
+  }
+  s2.StrategyNodeIf if {
+  }
+  s2.StrategyNodeInvocableAction invocableAction {
+  }
+  boolean isTemplate {
+  }
+  string label {
+  }
+  s2.StrategyNodeMap map {
+  }
+  s2.StrategyNodeExclusive mutuallyExclusive {
+  }
+  string onBehalfOfExpression {
+  }
+  s2.StrategyNodeRecommendationLimit recommendationLimit {
+  }
+  s2.StrategyNodeRecommendationLoad recommendationLoad {
+  }
+  s2.StrategyNodeSort sort {
+  }
+  s2.StrategyNodeUnion union {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "recommendationStrategy"
+  dirName = "recommendationStrategies"
+  metadataType = "RecommendationStrategy"
+}

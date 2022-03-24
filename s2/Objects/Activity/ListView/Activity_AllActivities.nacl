@@ -1,0 +1,8 @@
+s2.ListView Activity_AllActivities {
+  fullName = "Activity.AllActivities"
+  filterScope = "Team"
+  label = "All Activities"
+  _parent = [
+    s2.Activity,
+  ]
+}

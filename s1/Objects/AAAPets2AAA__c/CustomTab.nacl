@@ -1,0 +1,8 @@
+s1.CustomTab AAAPets2AAA__c {
+  fullName = "AAAPets2AAA__c"
+  customObject = true
+  motif = "Custom31: Car"
+  _parent = [
+    s1.AAAPets2AAA__c,
+  ]
+}

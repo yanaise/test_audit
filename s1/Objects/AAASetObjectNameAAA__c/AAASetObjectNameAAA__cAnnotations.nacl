@@ -1,0 +1,74 @@
+type s1.AAASetObjectNameAAA__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    hidden_string keyPrefix {
+    }
+    s1.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    s1.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    s1.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    s1.MktDataModelAttributes mktDataModelAttributes {
+    }
+    s1.ProfileSearchLayouts profileSearchLayouts {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    s1.SearchLayouts searchLayouts {
+    }
+    s1.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    hidden_string internalId {
+    }
+    string customSettingsType {
+    }
+    string visibility {
+    }
+  }
+  apiName = "AAASetObjectNameAAA__c"
+  metadataType = "CustomObject"
+  label = "AAASetupAAA"
+  customSettingsType = "Hierarchy"
+  description = '''
+let's describe this mf custom settings
+new line!
+Another new line!
+WHATUP?
+'''
+  enableFeeds = false
+  visibility = "Public"
+}

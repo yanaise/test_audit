@@ -1,0 +1,21 @@
+type s2.KeyboardShortcuts {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.CustomShortcut customShortcuts {
+  }
+  "List<s2.DefaultShortcut>" defaultShortcuts {
+  }
+  metadataType = "KeyboardShortcuts"
+}

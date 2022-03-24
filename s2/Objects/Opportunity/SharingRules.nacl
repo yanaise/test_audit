@@ -1,0 +1,6 @@
+s2.SharingRules Opportunity {
+  fullName = "Opportunity"
+  _parent = [
+    s2.Opportunity,
+  ]
+}

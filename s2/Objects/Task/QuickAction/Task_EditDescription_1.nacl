@@ -1,0 +1,23 @@
+s2.QuickAction Task_EditDescription_1@vu {
+  fullName = "Task.EditDescription_1"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = s2.Task.field.Description
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "EditDescription"
+  type = "Update"
+  _parent = [
+    s2.Task,
+  ]
+}

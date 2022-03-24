@@ -1,0 +1,10 @@
+s1.CustomApplication standard__Sites {
+  fullName = "standard__Sites"
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  tabs = [
+    "standard-Chatter",
+    s1.CustomTab.instance.AAAPets2AAA__c,
+  ]
+}

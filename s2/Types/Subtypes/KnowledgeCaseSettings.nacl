@@ -1,0 +1,39 @@
+type s2.KnowledgeCaseSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string articlePDFCreationProfile {
+  }
+  unknown articlePublicSharingCommunities {
+  }
+  s2.KnowledgeSitesSettings articlePublicSharingSites {
+  }
+  s2.KnowledgeSitesSettings articlePublicSharingSitesChatterAnswers {
+  }
+  string assignTo {
+  }
+  string customizationClass {
+  }
+  string defaultContributionArticleType {
+  }
+  boolean enableArticleCreation {
+  }
+  boolean enableArticlePublicSharingSites {
+  }
+  boolean enableCaseDataCategoryMapping {
+  }
+  boolean useProfileForPDFCreation {
+  }
+  metadataType = "KnowledgeCaseSettings"
+}

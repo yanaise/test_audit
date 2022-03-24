@@ -1,0 +1,9 @@
+s2.MyDomainSettings {
+  fullName = "MyDomain"
+  canOnlyLoginWithMyDomainUrl = false
+  doesApiLoginRequireOrgDomain = false
+  enableNativeBrowserForAuthOnAndroid = false
+  enableNativeBrowserForAuthOnIos = false
+  useStabilizedMyDomainHostnames = true
+  useStabilizedSandboxMyDomainHostnames = true
+}

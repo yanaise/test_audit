@@ -1,0 +1,6 @@
+s2.SharingRules Order {
+  fullName = "Order"
+  _parent = [
+    s2.Order,
+  ]
+}

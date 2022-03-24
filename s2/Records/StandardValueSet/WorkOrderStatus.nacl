@@ -1,0 +1,4 @@
+s2.StandardValueSet WorkOrderStatus {
+  fullName = "WorkOrderStatus"
+  sorted = false
+}

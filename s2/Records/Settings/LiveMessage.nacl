@@ -1,0 +1,4 @@
+s2.LiveMessageSettings {
+  fullName = "LiveMessage"
+  enableLiveMessage = false
+}

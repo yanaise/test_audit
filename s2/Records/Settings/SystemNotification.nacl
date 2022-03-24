@@ -1,0 +1,5 @@
+s2.SystemNotificationSettings {
+  fullName = "SystemNotification"
+  disableDowntimeNotifications = "false"
+  disableMaintenanceNotifications = "false"
+}

@@ -1,0 +1,6 @@
+s2.SharingRules AuthorizationForm {
+  fullName = "AuthorizationForm"
+  _parent = [
+    s2.AuthorizationForm,
+  ]
+}

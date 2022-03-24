@@ -1,0 +1,163 @@
+type s2.Solution {
+  serviceid Id {
+    apiName = "Solution.Id"
+    label = "Solution ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "Solution.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber SolutionNumber {
+    apiName = "Solution.SolutionNumber"
+    label = "Solution Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text SolutionName {
+    apiName = "Solution.SolutionName"
+    label = "Title"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.Checkbox IsPublished {
+    apiName = "Solution.IsPublished"
+    label = "Public"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Checkbox IsPublishedInPublicKb {
+    apiName = "Solution.IsPublishedInPublicKb"
+    label = "Visible in Public Knowledge Base"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Picklist Status {
+    apiName = "Solution.Status"
+    label = "Status"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = true
+    valueSetName = s2.StandardValueSet.instance.SolutionStatus
+  }
+  s2.Checkbox IsReviewed {
+    apiName = "Solution.IsReviewed"
+    label = "Reviewed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Html SolutionNote {
+    apiName = "Solution.SolutionNote"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  s2.Lookup OwnerId {
+    apiName = "Solution.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "Solution.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "Solution.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "Solution.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "Solution.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "Solution.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Number TimesUsed {
+    apiName = "Solution.TimesUsed"
+    label = "Num Related Cases"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Checkbox IsHtml {
+    apiName = "Solution.IsHtml"
+    label = "Is Html"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

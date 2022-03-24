@@ -1,0 +1,6 @@
+s2.SharingRules Individual {
+  fullName = "Individual"
+  _parent = [
+    s2.Individual,
+  ]
+}

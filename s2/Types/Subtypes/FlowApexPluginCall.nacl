@@ -1,0 +1,55 @@
+type s2.FlowApexPluginCall {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string description {
+  }
+  string name {
+  }
+  string elementSubtype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FilterCollectionProcessor",
+        "RecommendationMapCollectionProcessor",
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  string label {
+  }
+  number locationX {
+  }
+  number locationY {
+  }
+  string apexClass {
+    foreignKeyDomain = [
+      s2.ApexClass,
+    ]
+  }
+  s2.FlowConnector connector {
+  }
+  s2.FlowConnector faultConnector {
+  }
+  s2.FlowApexPluginCallInputParameter inputParameters {
+  }
+  s2.FlowApexPluginCallOutputParameter outputParameters {
+  }
+  metadataType = "FlowApexPluginCall"
+}

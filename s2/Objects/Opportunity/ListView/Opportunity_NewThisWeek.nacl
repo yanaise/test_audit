@@ -1,0 +1,15 @@
+s2.ListView Opportunity_NewThisWeek {
+  fullName = "Opportunity.NewThisWeek"
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "OPPORTUNITY.CREATED_DATE"
+      operation = "equals"
+      value = "THIS_WEEK"
+    },
+  ]
+  label = "New This Week"
+  _parent = [
+    s2.Opportunity,
+  ]
+}

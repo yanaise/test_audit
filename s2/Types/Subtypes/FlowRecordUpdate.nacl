@@ -1,0 +1,56 @@
+type s2.FlowRecordUpdate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<s2.FlowMetadataValue>" processMetadataValues {
+  }
+  string description {
+  }
+  string name {
+  }
+  string elementSubtype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FilterCollectionProcessor",
+        "RecommendationMapCollectionProcessor",
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  string label {
+  }
+  number locationX {
+  }
+  number locationY {
+  }
+  s2.FlowConnector connector {
+  }
+  s2.FlowConnector faultConnector {
+  }
+  string filterLogic {
+  }
+  "List<s2.FlowRecordFilter>" filters {
+  }
+  "List<s2.FlowInputFieldAssignment>" inputAssignments {
+  }
+  string inputReference {
+  }
+  string object {
+  }
+  metadataType = "FlowRecordUpdate"
+}

@@ -1,0 +1,35 @@
+type s2.StrategyNodeRecommendationLoad {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childNode {
+  }
+  string description {
+  }
+  string label {
+  }
+  string name {
+  }
+  number limit {
+  }
+  s2.RecommendationLoadCondition condition {
+  }
+  string conditionLogic {
+  }
+  string object {
+  }
+  s2.StrategyNodeSortField sortField {
+  }
+  metadataType = "StrategyNodeRecommendationLoad"
+}

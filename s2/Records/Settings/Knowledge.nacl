@@ -1,0 +1,4 @@
+s2.KnowledgeSettings {
+  fullName = "Knowledge"
+  enableKnowledge = false
+}

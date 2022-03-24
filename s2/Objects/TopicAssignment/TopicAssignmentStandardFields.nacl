@@ -1,0 +1,126 @@
+type s2.TopicAssignment {
+  serviceid Id {
+    apiName = "TopicAssignment.Id"
+    label = "Topic Assignment ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Lookup TopicId {
+    apiName = "TopicAssignment.TopicId"
+    label = "Topic ID"
+    _required = true
+    referenceTo = [
+      s2.Topic,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Topic"
+    queryable = true
+  }
+  s2.Lookup EntityId {
+    apiName = "TopicAssignment.EntityId"
+    label = "Entity ID"
+    _required = true
+    referenceTo = [
+      s2.AAAKareokeAAA__c,
+      s2.AAAListSetupAAA__c,
+      s2.AAAPetAAA__c,
+      s2.AAAPets2AAA__c,
+      s2.AAASetObjectNameAAA__c,
+      s2.Account,
+      s2.Asset,
+      s2.Book__c,
+      s2.Campaign,
+      s2.Case,
+      s2.Contact,
+      "ContentDocument",
+      s2.Contract,
+      s2.Event,
+      s2.FeedItem,
+      s2.Lead,
+      s2.Opportunity,
+      s2.Order,
+      s2.ResourceAbsence,
+      s2.ResourcePreference,
+      s2.ReturnOrder,
+      s2.ReturnOrderLineItem,
+      s2.Second_list_setting__c,
+      s2.ServiceAppointment,
+      s2.ServiceResource,
+      s2.ServiceResourceSkill,
+      s2.ServiceTerritory,
+      s2.ServiceTerritoryMember,
+      s2.Shift,
+      s2.Solution,
+      s2.SomeHierSetting__c,
+      s2.Task,
+      s2.Weeyah__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Entity"
+    queryable = true
+  }
+  s2.Text EntityKeyPrefix {
+    apiName = "TopicAssignment.EntityKeyPrefix"
+    label = "Record Key Prefix"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 3
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text EntityType {
+    apiName = "TopicAssignment.EntityType"
+    label = "Object Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "TopicAssignment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "TopicAssignment.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "TopicAssignment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "TopicAssignment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

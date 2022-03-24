@@ -1,0 +1,33 @@
+type s2.SharingRules {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  "List<s2.SharingCriteriaRule>" sharingCriteriaRules {
+  }
+  "List<s2.SharingGuestRule>" sharingGuestRules {
+  }
+  "List<s2.SharingOwnerRule>" sharingOwnerRules {
+  }
+  "List<s2.SharingTerritoryRule>" sharingTerritoryRules {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "sharingRules"
+  dirName = "sharingRules"
+  metadataType = "SharingRules"
+}

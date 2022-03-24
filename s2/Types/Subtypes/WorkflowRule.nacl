@@ -1,0 +1,48 @@
+type s2.WorkflowRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<s2.WorkflowActionReference>" actions {
+  }
+  boolean active {
+  }
+  string booleanFilter {
+  }
+  "List<s2.FilterItem>" criteriaItems {
+  }
+  string description {
+  }
+  string formula {
+  }
+  serviceid fullName {
+  }
+  string triggerType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "OnRecursiveUpdate",
+        "onAllChanges",
+        "onCreateOnly",
+        "onCreateOrTriggeringUpdate",
+      ]
+    }
+  }
+  "List<s2.WorkflowTimeTrigger>" workflowTimeTriggers {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  metadataType = "WorkflowRule"
+}

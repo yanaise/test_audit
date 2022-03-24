@@ -1,0 +1,6 @@
+s2.SharingRules MessagingSession {
+  fullName = "MessagingSession"
+  _parent = [
+    s2.MessagingSession,
+  ]
+}

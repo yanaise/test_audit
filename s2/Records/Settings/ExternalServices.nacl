@@ -1,0 +1,4 @@
+s2.ExternalServicesSettings {
+  fullName = "ExternalServices"
+  enableIgnoreUnsupportedOperations = "false"
+}

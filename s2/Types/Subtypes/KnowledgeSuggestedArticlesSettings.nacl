@@ -1,0 +1,25 @@
+type s2.KnowledgeSuggestedArticlesSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.KnowledgeCaseFieldsSettings caseFields {
+  }
+  boolean useSuggestedArticlesForCase {
+  }
+  s2.KnowledgeWorkOrderFieldsSettings workOrderFields {
+  }
+  s2.KnowledgeWorkOrderLineItemFieldsSettings workOrderLineItemFields {
+  }
+  metadataType = "KnowledgeSuggestedArticlesSettings"
+}

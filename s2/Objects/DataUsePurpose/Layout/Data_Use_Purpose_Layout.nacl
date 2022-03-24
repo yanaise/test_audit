@@ -1,0 +1,62 @@
+s2.Layout DataUsePurpose_Data_Use_Purpose_Layout@bsss {
+  fullName = "DataUsePurpose-Data Use Purpose Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.DataUsePurpose.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = s2.DataUsePurpose.field.LegalBasisId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.DataUsePurpose.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = s2.DataUsePurpose.field.CanDataSubjectOptOut
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "AuthorizationForm",
+      ]
+      relatedList = "AuthorizationFormDataUseRelatedList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.DataUsePurpose,
+  ]
+}

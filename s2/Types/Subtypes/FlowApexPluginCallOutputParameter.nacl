@@ -1,0 +1,23 @@
+type s2.FlowApexPluginCallOutputParameter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string assignToReference {
+  }
+  string name {
+  }
+  metadataType = "FlowApexPluginCallOutputParameter"
+}

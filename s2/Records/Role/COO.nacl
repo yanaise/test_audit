@@ -1,0 +1,10 @@
+s2.Role COO {
+  fullName = "COO"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "COO"
+  mayForecastManagerShare = false
+  name = "COO"
+  opportunityAccessLevel = "Edit"
+  parentRole = s2.Role.instance.CEO
+}

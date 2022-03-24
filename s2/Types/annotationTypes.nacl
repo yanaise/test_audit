@@ -1,0 +1,175 @@
+type s2.RelationshipOrder is number {
+  _restriction = {
+    min = 0
+    max = 1
+    enforce_value = false
+  }
+}
+type s2.RichTextAreaVisibleLines is number {
+  _restriction = {
+    min = 10
+    max = 50
+    enforce_value = false
+  }
+}
+type s2.MultiPicklistVisibleLines is number {
+  _restriction = {
+    min = 3
+    max = 10
+    enforce_value = false
+  }
+}
+type s2.LongTextAreaVisibleLines is number {
+  _restriction = {
+    min = 2
+    max = 50
+    enforce_value = false
+  }
+}
+type s2.EncryptedTextLength is number {
+  _restriction = {
+    min = 1
+    max = 175
+    enforce_value = false
+  }
+}
+type s2.TextAreaLength is number {
+  _restriction = {
+    min = 1
+    max = 131072
+    enforce_value = false
+  }
+}
+type s2.TextLength is number {
+  _restriction = {
+    min = 1
+    max = 255
+    enforce_value = false
+  }
+}
+type s2.formulaTreatBlanksAs is string {
+  _restriction = {
+    values = [
+      "BlankAsBlank",
+      "BlankAsZero",
+    ]
+  }
+}
+type s2.valueSet {
+  string fullName {
+  }
+  string label {
+  }
+  boolean default {
+  }
+  boolean isActive {
+  }
+  string color {
+  }
+}
+type s2.securityClassification is string {
+  _restriction = {
+    values = [
+      "Public",
+      "Internal",
+      "Confidential",
+      "Restricted",
+      "MissionCritical",
+    ]
+  }
+}
+type s2.businessStatus is string {
+  _restriction = {
+    values = [
+      "Active",
+      "DeprecateCandidate",
+      "Hidden",
+    ]
+  }
+}
+type s2.maskType is string {
+  _restriction = {
+    values = [
+      "all",
+      "creditCard",
+      "ssn",
+      "lastFour",
+      "sin",
+      "nino",
+    ]
+  }
+}
+type s2.maskChar is string {
+  _restriction = {
+    values = [
+      "X",
+      "asterisk",
+    ]
+  }
+}
+type s2.LookupFilter {
+  boolean active {
+  }
+  string booleanFilter {
+  }
+  string errorMessage {
+  }
+  string infoMessage {
+  }
+  boolean isOptional {
+  }
+  "List<s2.FilterItem>" filterItems {
+  }
+  apiName = "LookupFilter"
+}
+type s2.ValueSettings {
+  string valueName {
+  }
+  "List<string>" controllingFieldValue {
+  }
+  apiName = "ValueSettings"
+}
+type s2.rollupSummaryFilterOperation is string {
+  _restriction = {
+    values = [
+      "equals",
+      "notEqual",
+      "lessThan",
+      "greaterThan",
+      "lessOrEqual",
+      "greaterOrEqual",
+      "contains",
+      "notContain",
+      "startsWith",
+      "includes",
+      "excludes",
+      "within",
+    ]
+  }
+}
+type s2.summaryFilterItems {
+  string field {
+  }
+  s2.rollupSummaryFilterOperation operation {
+  }
+  string value {
+  }
+  string valueField {
+  }
+}
+type s2.summaryOperation is string {
+  _restriction = {
+    values = [
+      "count",
+      "min",
+      "max",
+      "sum",
+    ]
+  }
+}
+type s2.FieldDependency {
+  string controllingField {
+  }
+  "List<s2.ValueSettings>" valueSettings {
+  }
+}

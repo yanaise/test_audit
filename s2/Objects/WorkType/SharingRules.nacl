@@ -1,0 +1,6 @@
+s2.SharingRules WorkType {
+  fullName = "WorkType"
+  _parent = [
+    s2.WorkType,
+  ]
+}

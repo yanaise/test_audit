@@ -1,0 +1,92 @@
+type s1.Second_list_setting__c {
+  serviceid Id {
+    apiName = "Second_list_setting__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s1.Checkbox IsDeleted {
+    apiName = "Second_list_setting__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s1.Text Name {
+    apiName = "Second_list_setting__c.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 38
+    queryable = true
+  }
+  s1.Lookup SetupOwnerId {
+    apiName = "Second_list_setting__c.SetupOwnerId"
+    label = "Location"
+    referenceTo = [
+      "Organization",
+      "Profile",
+      s1.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "SetupOwner"
+    queryable = true
+    _hidden_value = true
+  }
+  s1.DateTime CreatedDate {
+    apiName = "Second_list_setting__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s1.Lookup CreatedById {
+    apiName = "Second_list_setting__c.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s1.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s1.DateTime LastModifiedDate {
+    apiName = "Second_list_setting__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s1.Lookup LastModifiedById {
+    apiName = "Second_list_setting__c.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s1.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s1.DateTime SystemModstamp {
+    apiName = "Second_list_setting__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,6 @@
+s2.SharingRules QuickTextUsage {
+  fullName = "QuickTextUsage"
+  _parent = [
+    s2.QuickTextUsage,
+  ]
+}

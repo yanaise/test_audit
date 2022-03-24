@@ -1,0 +1,6 @@
+s2.SharingRules DataUseLegalBasis {
+  fullName = "DataUseLegalBasis"
+  _parent = [
+    s2.DataUseLegalBasis,
+  ]
+}

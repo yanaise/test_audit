@@ -1,0 +1,7 @@
+s2.SchemaSettings {
+  fullName = "Schema"
+  enableAdvancedCMTSecurity = true
+  enableAdvancedCSSecurity = true
+  enableListCustomSettingCreation = true
+  enableSOSLOnCustomSettings = false
+}

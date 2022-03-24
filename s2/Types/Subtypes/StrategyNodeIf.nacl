@@ -1,0 +1,31 @@
+type s2.StrategyNodeIf {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childNode {
+  }
+  string description {
+  }
+  string label {
+  }
+  string name {
+  }
+  number limit {
+  }
+  s2.IfExpression childNodeExpression {
+  }
+  boolean onlyFirstMatch {
+  }
+  metadataType = "StrategyNodeIf"
+}

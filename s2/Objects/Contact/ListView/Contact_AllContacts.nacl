@@ -1,0 +1,8 @@
+s2.ListView Contact_AllContacts {
+  fullName = "Contact.AllContacts"
+  filterScope = "Everything"
+  label = "All Contacts"
+  _parent = [
+    s2.Contact,
+  ]
+}

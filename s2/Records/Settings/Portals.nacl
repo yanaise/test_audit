@@ -1,0 +1,5 @@
+s2.PortalsSettings {
+  fullName = "Portals"
+  clickjackSSPLoginPage = "false"
+  redirectPortalLoginToHttps = "false"
+}

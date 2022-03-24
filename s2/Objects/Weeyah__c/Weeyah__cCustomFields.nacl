@@ -1,0 +1,14 @@
+type s2.Weeyah__c {
+  s2.Text worry__c {
+    apiName = "Weeyah__c.worry__c"
+    label = "worry"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

@@ -1,0 +1,14 @@
+s2.CustomApplication standard__Platform {
+  fullName = "standard__Platform"
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-Account",
+    "standard-Contact",
+    "standard-report",
+    "standard-Dashboard",
+    s2.CustomTab.instance.AAAPets2AAA__c,
+  ]
+}

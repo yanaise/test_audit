@@ -1,0 +1,6 @@
+s2.SharingRules ContactPointTypeConsent {
+  fullName = "ContactPointTypeConsent"
+  _parent = [
+    s2.ContactPointTypeConsent,
+  ]
+}

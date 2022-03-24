@@ -1,0 +1,73 @@
+s2.DuplicateRule Contact_Standard_Contact_Duplicate_Rule@vuuu {
+  fullName = "Contact.Standard_Contact_Duplicate_Rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Use one of these records?"
+  description = "Identify contacts that duplicate other contacts and leads."
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = s2.Contact
+      matchingRule = "Standard_Contact_Match_Rule_v1_1"
+    },
+    {
+      matchRuleSObjectType = s2.Lead
+      matchingRule = "Standard_Lead_Match_Rule_v1_0"
+      objectMapping = [
+        {
+          inputObject = s2.Contact
+          mappingFields = [
+            {
+              inputField = s2.Contact.field.AccountId
+              outputField = s2.Lead.field.Company
+            },
+            {
+              inputField = s2.Contact.field.Email
+              outputField = s2.Lead.field.Email
+            },
+            {
+              inputField = "FirstName"
+              outputField = "FirstName"
+            },
+            {
+              inputField = "LastName"
+              outputField = "LastName"
+            },
+            {
+              inputField = "MailingCity"
+              outputField = "City"
+            },
+            {
+              inputField = "MailingPostalCode"
+              outputField = "PostalCode"
+            },
+            {
+              inputField = "MailingStreet"
+              outputField = "Street"
+            },
+            {
+              inputField = s2.Contact.field.Phone
+              outputField = s2.Lead.field.Phone
+            },
+            {
+              inputField = s2.Contact.field.Title
+              outputField = s2.Lead.field.Title
+            },
+          ]
+          outputObject = s2.Lead
+        },
+      ]
+    },
+  ]
+  isActive = true
+  masterLabel = "Standard Contact Duplicate Rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = "Report"
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _parent = [
+    s2.Contact,
+  ]
+}

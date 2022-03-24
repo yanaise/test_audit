@@ -1,0 +1,91 @@
+type s2.SomeHierSetting__c {
+  serviceid Id {
+    apiName = "SomeHierSetting__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "SomeHierSetting__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text Name {
+    apiName = "SomeHierSetting__c.Name"
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+  }
+  s2.Lookup SetupOwnerId {
+    apiName = "SomeHierSetting__c.SetupOwnerId"
+    label = "Location"
+    referenceTo = [
+      "Organization",
+      "Profile",
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "SetupOwner"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "SomeHierSetting__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "SomeHierSetting__c.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "SomeHierSetting__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "SomeHierSetting__c.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "SomeHierSetting__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,26 @@
+type s2.DuplicateRuleMatchRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string matchRuleSObjectType {
+  }
+  string matchingRule {
+  }
+  "List<s2.ObjectMapping>" objectMapping {
+    foreignKeyDomain = [
+      s2.ObjectMapping,
+    ]
+  }
+  metadataType = "DuplicateRuleMatchRule"
+}

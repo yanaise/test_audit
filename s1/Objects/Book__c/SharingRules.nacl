@@ -1,0 +1,6 @@
+s1.SharingRules Book__c {
+  fullName = "Book__c"
+  _parent = [
+    s1.Book__c,
+  ]
+}

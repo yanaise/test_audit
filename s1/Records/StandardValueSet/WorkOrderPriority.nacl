@@ -1,0 +1,4 @@
+s1.StandardValueSet WorkOrderPriority {
+  fullName = "WorkOrderPriority"
+  sorted = false
+}

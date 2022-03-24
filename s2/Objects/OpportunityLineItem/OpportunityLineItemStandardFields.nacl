@@ -1,0 +1,203 @@
+type s2.OpportunityLineItem {
+  serviceid Id {
+    apiName = "OpportunityLineItem.Id"
+    label = "Line Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Lookup OpportunityId {
+    apiName = "OpportunityLineItem.OpportunityId"
+    label = "Opportunity ID"
+    _required = true
+    referenceTo = [
+      s2.Opportunity,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Opportunity"
+    queryable = true
+  }
+  s2.Number SortOrder {
+    apiName = "OpportunityLineItem.SortOrder"
+    label = "Sort Order"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  s2.Lookup PricebookEntryId {
+    apiName = "OpportunityLineItem.PricebookEntryId"
+    label = "Price Book Entry ID"
+    referenceTo = [
+      s2.PricebookEntry,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "PricebookEntry"
+    queryable = true
+  }
+  s2.Lookup Product2Id {
+    apiName = "OpportunityLineItem.Product2Id"
+    label = "Product ID"
+    referenceTo = [
+      s2.Product2,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Product2"
+    queryable = true
+  }
+  s2.Text ProductCode {
+    apiName = "OpportunityLineItem.ProductCode"
+    label = "Product Code"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text Name {
+    apiName = "OpportunityLineItem.Name"
+    label = "Opportunity Product Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 376
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Number Quantity {
+    apiName = "OpportunityLineItem.Quantity"
+    label = "Quantity"
+    _required = true
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  s2.Currency TotalPrice {
+    apiName = "OpportunityLineItem.TotalPrice"
+    label = "Total Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  s2.Currency UnitPrice {
+    apiName = "OpportunityLineItem.UnitPrice"
+    label = "Sales Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  s2.Currency ListPrice {
+    apiName = "OpportunityLineItem.ListPrice"
+    label = "List Price"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Date ServiceDate {
+    apiName = "OpportunityLineItem.ServiceDate"
+    label = "Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Text Description {
+    apiName = "OpportunityLineItem.Description"
+    label = "Line Description"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "OpportunityLineItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "OpportunityLineItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "OpportunityLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "OpportunityLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "OpportunityLineItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "OpportunityLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Unknown Discount {
+    apiName = "OpportunityLineItem.Discount"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown Subtotal {
+    apiName = "OpportunityLineItem.Subtotal"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

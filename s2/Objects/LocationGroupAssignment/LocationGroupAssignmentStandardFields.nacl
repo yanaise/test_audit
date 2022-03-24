@@ -1,0 +1,10 @@
+type s2.LocationGroupAssignment {
+  s2.MasterDetail LocationGroupId {
+    apiName = "LocationGroupAssignment.LocationGroupId"
+    _hidden_value = true
+  }
+  s2.MasterDetail LocationId {
+    apiName = "LocationGroupAssignment.LocationId"
+    _hidden_value = true
+  }
+}

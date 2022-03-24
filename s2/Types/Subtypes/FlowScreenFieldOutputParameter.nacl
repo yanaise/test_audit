@@ -1,0 +1,23 @@
+type s2.FlowScreenFieldOutputParameter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string assignToReference {
+  }
+  string name {
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  metadataType = "FlowScreenFieldOutputParameter"
+}

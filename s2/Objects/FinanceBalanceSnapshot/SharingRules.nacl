@@ -1,0 +1,6 @@
+s2.SharingRules FinanceBalanceSnapshot {
+  fullName = "FinanceBalanceSnapshot"
+  _parent = [
+    s2.FinanceBalanceSnapshot,
+  ]
+}

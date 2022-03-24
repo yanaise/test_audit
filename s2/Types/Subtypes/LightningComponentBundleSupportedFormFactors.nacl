@@ -1,0 +1,5 @@
+type s2.LightningComponentBundleSupportedFormFactors {
+  "List<s2.LightningComponentBundleSupportedFormFactor>" supportedFormFactor {
+  }
+  metadataType = "LightningComponentBundleSupportedFormFactors"
+}

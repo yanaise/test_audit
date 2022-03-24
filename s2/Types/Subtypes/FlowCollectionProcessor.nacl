@@ -1,0 +1,72 @@
+type s2.FlowCollectionProcessor {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string description {
+  }
+  string name {
+  }
+  string elementSubtype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FilterCollectionProcessor",
+        "RecommendationMapCollectionProcessor",
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  string label {
+  }
+  number locationX {
+  }
+  number locationY {
+  }
+  string assignNextValueToReference {
+  }
+  string collectionProcessorType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FilterCollectionProcessor",
+        "RecommendationMapCollectionProcessor",
+        "SortCollectionProcessor",
+      ]
+    }
+  }
+  string collectionReference {
+  }
+  string conditionLogic {
+  }
+  s2.FlowCondition conditions {
+  }
+  s2.FlowConnector connector {
+  }
+  string formula {
+  }
+  number limit {
+  }
+  s2.FlowCollectionMapItem mapItems {
+  }
+  string outputSObjectType {
+  }
+  s2.FlowCollectionSortOption sortOptions {
+  }
+  metadataType = "FlowCollectionProcessor"
+}

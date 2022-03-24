@@ -1,0 +1,18 @@
+type s2.StreamActivityAccess {
+  s2.Lookup ActivityTeamId {
+    apiName = "StreamActivityAccess.ActivityTeamId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  string ExternalResource {
+    _hidden_value = true
+  }
+  string IsContentShared {
+    _hidden_value = true
+  }
+  s2.Lookup OwnerId {
+    apiName = "StreamActivityAccess.OwnerId"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

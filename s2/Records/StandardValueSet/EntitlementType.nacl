@@ -1,0 +1,4 @@
+s2.StandardValueSet EntitlementType {
+  fullName = "EntitlementType"
+  sorted = false
+}

@@ -1,0 +1,77 @@
+s2.Layout AAMetaDataTypeAA__mdt_AAMetaDataTypeAA_Layout@uubs {
+  fullName = "AAMetaDataTypeAA__mdt-AAMetaDataTypeAA Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.AAMetaDataTypeAA__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = s2.AAMetaDataTypeAA__mdt.field.DeveloperName
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = s2.AAMetaDataTypeAA__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.AAMetaDataTypeAA__mdt,
+  ]
+}

@@ -1,0 +1,20 @@
+type s2.ScorecardMetric {
+  s2.Picklist Category {
+    apiName = "ScorecardMetric.Category"
+    _hidden_value = true
+  }
+  string Description {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  s2.Lookup ReportId {
+    apiName = "ScorecardMetric.ReportId"
+    _hidden_value = true
+  }
+  s2.MasterDetail ScorecardId {
+    apiName = "ScorecardMetric.ScorecardId"
+    _hidden_value = true
+  }
+}

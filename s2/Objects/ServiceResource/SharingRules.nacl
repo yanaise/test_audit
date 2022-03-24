@@ -1,0 +1,6 @@
+s2.SharingRules ServiceResource {
+  fullName = "ServiceResource"
+  _parent = [
+    s2.ServiceResource,
+  ]
+}

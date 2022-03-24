@@ -1,0 +1,79 @@
+s2.Layout AssetRelationship_Asset_Relationship_Layout@bss {
+  fullName = "AssetRelationship-Asset Relationship Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.AssetRelationship.field.AssetId
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssetRelationship.field.FromDate
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssetRelationship.field.RelationshipType
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.AssetRelationship.field.RelatedAssetId
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssetRelationship.field.ToDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssetRelationship.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssetRelationship.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.AssetRelationship,
+  ]
+}

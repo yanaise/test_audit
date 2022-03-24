@@ -1,0 +1,125 @@
+type s2.ExpressionFilterCriteria {
+  serviceid Id {
+    apiName = "ExpressionFilterCriteria.Id"
+    label = "ExpressionFilterCriteria ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "ExpressionFilterCriteria.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber Name {
+    apiName = "ExpressionFilterCriteria.Name"
+    label = "ExpressionFilterCriteria Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "ExpressionFilterCriteria.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "ExpressionFilterCriteria.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "ExpressionFilterCriteria.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "ExpressionFilterCriteria.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "ExpressionFilterCriteria.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text FilterTarget {
+    apiName = "ExpressionFilterCriteria.FilterTarget"
+    label = "FilterTarget"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.Text FilterTargetValue {
+    apiName = "ExpressionFilterCriteria.FilterTargetValue"
+    label = "Context"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.Picklist Operation {
+    apiName = "ExpressionFilterCriteria.Operation"
+    label = "Operation"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Number SortOrder {
+    apiName = "ExpressionFilterCriteria.SortOrder"
+    label = "SortOrder"
+    precision = 8
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  s2.Lookup ExpressionFilterId {
+    apiName = "ExpressionFilterCriteria.ExpressionFilterId"
+    label = "ExpressionFilter ID"
+    _required = true
+    referenceTo = [
+      s2.ExpressionFilter,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ExpressionFilter"
+    queryable = true
+  }
+}

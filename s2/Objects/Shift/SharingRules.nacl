@@ -1,0 +1,6 @@
+s2.SharingRules Shift {
+  fullName = "Shift"
+  _parent = [
+    s2.Shift,
+  ]
+}

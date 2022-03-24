@@ -1,0 +1,39 @@
+type s2.Workflow {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  "List<s2.WorkflowRule>" rules {
+  }
+  "List<s2.WorkflowAlert>" alerts {
+  }
+  "List<s2.WorkflowFieldUpdate>" fieldUpdates {
+  }
+  "List<s2.WorkflowFlowAction>" flowActions {
+  }
+  "List<s2.WorkflowKnowledgePublish>" knowledgePublishes {
+  }
+  "List<s2.WorkflowOutboundMessage>" outboundMessages {
+  }
+  "List<s2.WorkflowTask>" tasks {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "workflow"
+  dirName = "workflows"
+  metadataType = "Workflow"
+}

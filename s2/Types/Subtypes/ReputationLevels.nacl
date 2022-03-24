@@ -1,0 +1,21 @@
+type s2.ReputationLevels {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.ChatterAnswersReputationLevel chatterAnswersReputationLevels {
+  }
+  s2.IdeaReputationLevel ideaReputationLevels {
+  }
+  metadataType = "ReputationLevels"
+}

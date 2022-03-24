@@ -1,0 +1,83 @@
+s2.Layout ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bssss {
+  fullName = "ContactPointTypeConsent-Contact Point Type Consent Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.Name
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.PartyId
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointTypeConsent.field.DataUsePurposeId
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointTypeConsent.field.EffectiveFrom
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.CaptureSource
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.CaptureDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.ContactPointType
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.PrivacyConsentStatus
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointTypeConsent.field.EffectiveTo
+            },
+            {
+              behavior = "Required"
+              field = s2.ContactPointTypeConsent.field.CaptureContactPointType
+            },
+            {
+              behavior = "Edit"
+              field = s2.ContactPointTypeConsent.field.DoubleConsentCaptureDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.ContactPointTypeConsent,
+  ]
+}

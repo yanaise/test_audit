@@ -1,0 +1,245 @@
+type s2.PaymentLineInvoice {
+  serviceid Id {
+    apiName = "PaymentLineInvoice.Id"
+    label = "Payment Line Invoice ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "PaymentLineInvoice.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber PaymentLineInvoiceNumber {
+    apiName = "PaymentLineInvoice.PaymentLineInvoiceNumber"
+    label = "Payment Line Invoice Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "PaymentLineInvoice.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "PaymentLineInvoice.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "PaymentLineInvoice.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "PaymentLineInvoice.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "PaymentLineInvoice.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup InvoiceId {
+    apiName = "PaymentLineInvoice.InvoiceId"
+    label = "Invoice ID"
+    _required = true
+    referenceTo = [
+      s2.Invoice,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Invoice"
+    queryable = true
+  }
+  s2.Lookup PaymentId {
+    apiName = "PaymentLineInvoice.PaymentId"
+    label = "Payment ID"
+    _required = true
+    referenceTo = [
+      s2.Payment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Payment"
+    queryable = true
+  }
+  s2.Currency Amount {
+    apiName = "PaymentLineInvoice.Amount"
+    label = "Amount"
+    _required = true
+    createable = true
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  s2.Picklist Type {
+    apiName = "PaymentLineInvoice.Type"
+    label = "Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Applied"
+        default = false
+        label = "Applied"
+        isActive = true
+      },
+      {
+        fullName = "Unapplied"
+        default = false
+        label = "Unapplied"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Picklist HasBeenUnapplied {
+    apiName = "PaymentLineInvoice.HasBeenUnapplied"
+    label = "Has Been Unapplied"
+    _required = true
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+        isActive = true
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+        isActive = true
+      },
+      {
+        fullName = "NA"
+        default = false
+        label = "NA"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.LongTextArea Comments {
+    apiName = "PaymentLineInvoice.Comments"
+    label = "Comments"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
+  }
+  s2.DateTime Date {
+    apiName = "PaymentLineInvoice.Date"
+    label = "Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime AppliedDate {
+    apiName = "PaymentLineInvoice.AppliedDate"
+    label = "Applied Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime EffectiveDate {
+    apiName = "PaymentLineInvoice.EffectiveDate"
+    label = "Effective Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime UnappliedDate {
+    apiName = "PaymentLineInvoice.UnappliedDate"
+    label = "Unapplied Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Lookup AssociatedAccountId {
+    apiName = "PaymentLineInvoice.AssociatedAccountId"
+    label = "Account ID"
+    referenceTo = [
+      s2.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "AssociatedAccount"
+    queryable = true
+  }
+  s2.Lookup AssociatedPaymentLineId {
+    apiName = "PaymentLineInvoice.AssociatedPaymentLineId"
+    label = "Payment Line Invoice ID"
+    referenceTo = [
+      s2.PaymentLineInvoice,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "AssociatedPaymentLine"
+    queryable = true
+  }
+  s2.Summary ImpactAmount {
+    apiName = "PaymentLineInvoice.ImpactAmount"
+    label = "Impact Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Summary EffectiveImpactAmount {
+    apiName = "PaymentLineInvoice.EffectiveImpactAmount"
+    label = "Effective Impact Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Currency PaymentBalance {
+    apiName = "PaymentLineInvoice.PaymentBalance"
+    label = "Payment Balance"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+}

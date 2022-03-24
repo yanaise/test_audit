@@ -1,0 +1,66 @@
+s2.Layout Pricebook2_Price_Book_Layout@bss {
+  fullName = "Pricebook2-Price Book Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.Pricebook2.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = s2.Pricebook2.field.Description
+            },
+            {
+              behavior = "Readonly"
+              field = s2.Pricebook2.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.Pricebook2.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = s2.Pricebook2.field.IsStandard
+            },
+            {
+              behavior = "Readonly"
+              field = s2.Pricebook2.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedPricebookEntryListForPricebook"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.Pricebook2,
+  ]
+}

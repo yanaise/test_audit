@@ -1,0 +1,15 @@
+s2.CustomApplication standard__QueueManagement {
+  fullName = "standard__QueueManagement"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Queue Management"
+  navType = "Standard"
+  tabs = [
+    "standard-Location",
+    s2.CustomTab.instance.AAAPets2AAA__c,
+  ]
+  uiType = "Lightning"
+}

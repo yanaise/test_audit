@@ -1,0 +1,99 @@
+type s2.AAMetaDataTypeAA__mdt {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    hidden_string keyPrefix {
+    }
+    s2.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    s2.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    s2.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    s2.MktDataModelAttributes mktDataModelAttributes {
+    }
+    s2.ProfileSearchLayouts profileSearchLayouts {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    s2.SearchLayouts searchLayouts {
+    }
+    s2.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    hidden_string internalId {
+    }
+    boolean allowInChatterGroups {
+    }
+    string customHelp {
+    }
+    string customHelpPage {
+    }
+    string customSettingsType {
+    }
+    string deploymentStatus {
+    }
+    boolean deprecated {
+    }
+    boolean enableActivities {
+    }
+    boolean enableBulkApi {
+    }
+    boolean enableReports {
+    }
+    boolean enableSearch {
+    }
+    boolean enableSharing {
+    }
+    boolean enableStreamingApi {
+    }
+    string gender {
+    }
+    s2.CustomField nameField {
+    }
+    string pluralLabel {
+    }
+    string sharingModel {
+    }
+    string startsWith {
+    }
+    string visibility {
+    }
+  }
+  apiName = "AAMetaDataTypeAA__mdt"
+  metadataType = "CustomObject"
+  label = "AAMetaDataTypeAA"
+  pluralLabel = "AAMetaDataTypesAA"
+  visibility = "Public"
+}

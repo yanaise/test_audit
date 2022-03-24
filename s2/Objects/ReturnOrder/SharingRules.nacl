@@ -1,0 +1,6 @@
+s2.SharingRules ReturnOrder {
+  fullName = "ReturnOrder"
+  _parent = [
+    s2.ReturnOrder,
+  ]
+}

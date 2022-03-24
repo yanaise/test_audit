@@ -1,0 +1,40 @@
+type s2.BriefcaseRuleFilter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string filterOperator {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "d",
+        "e",
+        "g",
+        "h",
+        "l",
+        "m",
+        "s",
+      ]
+    }
+  }
+  number filterSeqNumber {
+  }
+  string filterValue {
+  }
+  string targetEntityField {
+    foreignKeyDomain = [
+      s2.CustomField,
+    ]
+  }
+  metadataType = "BriefcaseRuleFilter"
+}

@@ -1,0 +1,37 @@
+type s2.FlowWaitEvent {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string description {
+  }
+  string name {
+  }
+  string conditionLogic {
+  }
+  s2.FlowCondition conditions {
+  }
+  s2.FlowConnector connector {
+  }
+  string eventType {
+  }
+  s2.FlowWaitEventInputParameter inputParameters {
+  }
+  string label {
+  }
+  s2.FlowWaitEventOutputParameter outputParameters {
+  }
+  metadataType = "FlowWaitEvent"
+}

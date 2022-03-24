@@ -1,0 +1,9 @@
+s1.Role CEO_Second {
+  fullName = "CEO_Second"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "CEO_Second"
+  mayForecastManagerShare = false
+  name = "CEO_Second"
+  opportunityAccessLevel = "Edit"
+}

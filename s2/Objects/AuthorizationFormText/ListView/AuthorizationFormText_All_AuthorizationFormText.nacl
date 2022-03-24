@@ -1,0 +1,8 @@
+s2.ListView AuthorizationFormText_All_AuthorizationFormText {
+  fullName = "AuthorizationFormText.All_AuthorizationFormText"
+  filterScope = "Everything"
+  label = "All Authorization Form Text"
+  _parent = [
+    s2.AuthorizationFormText,
+  ]
+}

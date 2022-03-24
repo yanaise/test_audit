@@ -1,0 +1,10 @@
+s2.Role DirectorDirectSales {
+  fullName = "DirectorDirectSales"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Director, Direct Sales"
+  mayForecastManagerShare = false
+  name = "Director, Direct Sales"
+  opportunityAccessLevel = "Edit"
+  parentRole = s2.Role.instance.VPNorthAmericanSales
+}

@@ -1,0 +1,6 @@
+s2.SharingRules Asset {
+  fullName = "Asset"
+  _parent = [
+    s2.Asset,
+  ]
+}

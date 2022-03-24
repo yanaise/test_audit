@@ -1,0 +1,26 @@
+type s1.AAASetObjectNameAAA__c {
+  s1.Checkbox BBBFieldBBB__c {
+    apiName = "AAASetObjectNameAAA__c.BBBFieldBBB__c"
+    label = "BBBFieldBBB"
+    defaultValue = false
+    inlineHelpText = "HELP ME!"
+    createable = true
+    updateable = true
+    queryable = true
+    description = "some text describing this good good custom field"
+    externalId = false
+    trackTrending = false
+  }
+  s1.Text Hello_there__c {
+    apiName = "AAASetObjectNameAAA__c.Hello_there__c"
+    label = "Hello there"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

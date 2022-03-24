@@ -1,0 +1,6 @@
+s2.SharingRules CommSubscriptionConsent {
+  fullName = "CommSubscriptionConsent"
+  _parent = [
+    s2.CommSubscriptionConsent,
+  ]
+}

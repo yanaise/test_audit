@@ -1,0 +1,4 @@
+s2.InvocableActionSettings {
+  fullName = "InvocableAction"
+  isPartialSaveAllowed = true
+}

@@ -1,0 +1,4 @@
+s2.StandardValueSet IdeaCategory {
+  fullName = "IdeaCategory"
+  sorted = false
+}

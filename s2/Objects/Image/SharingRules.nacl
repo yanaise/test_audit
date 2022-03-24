@@ -1,0 +1,6 @@
+s2.SharingRules Image {
+  fullName = "Image"
+  _parent = [
+    s2.Image,
+  ]
+}

@@ -1,0 +1,15 @@
+s2.CustomApplication standard__LightningInstrumentation {
+  fullName = "standard__LightningInstrumentation"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "LightningInstrumentation"
+  navType = "Standard"
+  tabs = [
+    "standard-LightningInstrumentation",
+    s2.CustomTab.instance.AAAPets2AAA__c,
+  ]
+  uiType = "Lightning"
+}

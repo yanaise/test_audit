@@ -1,0 +1,9 @@
+s2.Role CEO_Sixth {
+  fullName = "CEO_Sixth"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "CEO_Sixth icecream 3"
+  mayForecastManagerShare = false
+  name = "CEO_Sixth"
+  opportunityAccessLevel = "Edit"
+}

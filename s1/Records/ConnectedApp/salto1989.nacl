@@ -1,0 +1,20 @@
+s1.ConnectedApp salto1989 {
+  fullName = "salto1989"
+  contactEmail = "yanai.sened@salto.io"
+  label = "salto1989"
+  oauthConfig = {
+    callbackUrl = "http://localhost:8080"
+    consumerKey = "3MVG9l2zHsylwlpSWZdiMzIJXeffB_99QCD7WAdg1jxsLRshjGXrNwPcoWPkR_z1W9YhdpllV0pUsaZe38_nV"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Full",
+      "RefreshToken",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

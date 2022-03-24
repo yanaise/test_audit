@@ -1,0 +1,23 @@
+type s2.FlowVisibilityRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string conditionLogic {
+  }
+  s2.FlowCondition conditions {
+  }
+  metadataType = "FlowVisibilityRule"
+}

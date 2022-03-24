@@ -1,0 +1,40 @@
+type s2.Queue {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean doesSendEmailToMembers {
+  }
+  string email {
+  }
+  serviceid fullName {
+  }
+  string name {
+  }
+  s2.QueueMembers queueMembers {
+  }
+  string queueRoutingConfig {
+    foreignKeyDomain = [
+      "QueueRoutingConfig",
+    ]
+  }
+  s2.QueueSobject queueSobject {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "queue"
+  dirName = "queues"
+  metadataType = "Queue"
+}

@@ -1,0 +1,76 @@
+s1.Layout AuthorizationFormConsent_Authorization_Form_Consent_Layout@bsss {
+  fullName = "AuthorizationFormConsent-Authorization Form Consent Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s1.AuthorizationFormConsent.field.Status
+            },
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.Name
+            },
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.AuthorizationFormTextId
+            },
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.ConsentCapturedSourceType
+            },
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.ConsentCapturedDateTime
+            },
+            {
+              behavior = "Edit"
+              field = s1.AuthorizationFormConsent.field.DocumentVersionId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.ConsentGiverId
+            },
+            {
+              behavior = "Required"
+              field = s1.AuthorizationFormConsent.field.ConsentCapturedSource
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Status",
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s1.AuthorizationFormConsent,
+  ]
+}

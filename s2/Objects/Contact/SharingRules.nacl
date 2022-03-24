@@ -1,0 +1,6 @@
+s2.SharingRules Contact {
+  fullName = "Contact"
+  _parent = [
+    s2.Contact,
+  ]
+}

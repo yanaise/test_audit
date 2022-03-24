@@ -1,0 +1,6 @@
+s2.SharingRules Account {
+  fullName = "Account"
+  _parent = [
+    s2.Account,
+  ]
+}

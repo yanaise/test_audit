@@ -1,0 +1,33 @@
+type s2.FlowRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string conditionLogic {
+  }
+  "List<s2.FlowCondition>" conditions {
+  }
+  s2.FlowConnector connector {
+  }
+  string description {
+  }
+  boolean doesRequireRecordChangedToMeetCriteria {
+  }
+  string label {
+  }
+  string name {
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  metadataType = "FlowRule"
+}

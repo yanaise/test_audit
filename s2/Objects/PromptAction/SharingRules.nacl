@@ -1,0 +1,6 @@
+s2.SharingRules PromptAction {
+  fullName = "PromptAction"
+  _parent = [
+    s2.PromptAction,
+  ]
+}

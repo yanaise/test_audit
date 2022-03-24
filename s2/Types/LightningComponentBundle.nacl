@@ -1,0 +1,44 @@
+type s2.LightningComponentBundle {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  number apiVersion {
+  }
+  s2.Capabilities capabilities {
+  }
+  string description {
+  }
+  boolean isExplicitImport {
+  }
+  boolean isExposed {
+  }
+  s2.LwcResources lwcResources {
+  }
+  string masterLabel {
+  }
+  string runtimeNamespace {
+  }
+  s2.TargetConfigs targetConfigs {
+  }
+  s2.Targets targets {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  dirName = "lwc"
+  metadataType = "LightningComponentBundle"
+}

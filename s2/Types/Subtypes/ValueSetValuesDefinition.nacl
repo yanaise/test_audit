@@ -1,0 +1,21 @@
+type s2.ValueSetValuesDefinition {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean sorted {
+  }
+  s2.CustomValue value {
+  }
+  metadataType = "ValueSetValuesDefinition"
+}

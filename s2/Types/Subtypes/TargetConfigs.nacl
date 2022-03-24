@@ -1,0 +1,5 @@
+type s2.TargetConfigs {
+  "List<s2.LightningComponentBundleTargetConfig>" targetConfig {
+  }
+  metadataType = "TargetConfigs"
+}

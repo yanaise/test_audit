@@ -1,0 +1,8 @@
+s2.ListView AuthorizationForm_All_AuthorizationForms {
+  fullName = "AuthorizationForm.All_AuthorizationForms"
+  filterScope = "Everything"
+  label = "All Authorization Forms"
+  _parent = [
+    s2.AuthorizationForm,
+  ]
+}

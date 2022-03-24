@@ -1,0 +1,27 @@
+type s2.RecordActionDeploymentContext {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string entityName {
+    foreignKeyDomain = [
+      "EntityDefinition",
+    ]
+  }
+  string recommendationStrategy {
+    foreignKeyDomain = [
+      s2.RecommendationStrategy,
+    ]
+  }
+  metadataType = "RecordActionDeploymentContext"
+}

@@ -1,0 +1,6 @@
+s2.SharingRules MacroUsage {
+  fullName = "MacroUsage"
+  _parent = [
+    s2.MacroUsage,
+  ]
+}

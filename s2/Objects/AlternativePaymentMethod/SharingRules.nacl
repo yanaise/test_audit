@@ -1,0 +1,6 @@
+s2.SharingRules AlternativePaymentMethod {
+  fullName = "AlternativePaymentMethod"
+  _parent = [
+    s2.AlternativePaymentMethod,
+  ]
+}

@@ -1,0 +1,14 @@
+type s2.SomeHierSetting__c {
+  s2.Text Descript__c {
+    apiName = "SomeHierSetting__c.Descript__c"
+    label = "Descript"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

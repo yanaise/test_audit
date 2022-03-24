@@ -1,0 +1,9 @@
+type s2.WebCartAdjustmentBasis {
+  string AdjustmentBasisDetail {
+    _hidden_value = true
+  }
+  s2.MasterDetail WebCartId {
+    apiName = "WebCartAdjustmentBasis.WebCartId"
+    _hidden_value = true
+  }
+}

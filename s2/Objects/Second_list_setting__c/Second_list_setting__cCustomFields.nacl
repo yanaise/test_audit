@@ -1,0 +1,15 @@
+type s2.Second_list_setting__c {
+  s2.Text somelabel__c {
+    apiName = "Second_list_setting__c.somelabel__c"
+    label = "somelabel"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    description = "wazzup?"
+    externalId = false
+    trackTrending = false
+  }
+}

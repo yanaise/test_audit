@@ -1,0 +1,39 @@
+type s2.RecordActionDeployment {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  s2.RecordActionDeploymentChannel channelConfigurations {
+  }
+  s2.RecordActionDeploymentContext deploymentContexts {
+  }
+  boolean hasGuidedActions {
+  }
+  boolean hasRecommendations {
+  }
+  string masterLabel {
+  }
+  s2.RecordActionRecommendation recommendation {
+  }
+  s2.RecordActionSelectableItem selectableItems {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "deployment"
+  dirName = "recordActionDeployments"
+  metadataType = "RecordActionDeployment"
+}

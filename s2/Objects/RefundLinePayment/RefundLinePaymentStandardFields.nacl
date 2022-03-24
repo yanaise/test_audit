@@ -1,0 +1,237 @@
+type s2.RefundLinePayment {
+  serviceid Id {
+    apiName = "RefundLinePayment.Id"
+    label = "Refund Line Payment ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "RefundLinePayment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber RefundLinePaymentNumber {
+    apiName = "RefundLinePayment.RefundLinePaymentNumber"
+    label = "Refund Line Payment Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "RefundLinePayment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "RefundLinePayment.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "RefundLinePayment.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "RefundLinePayment.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "RefundLinePayment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup PaymentId {
+    apiName = "RefundLinePayment.PaymentId"
+    label = "Payment ID"
+    _required = true
+    referenceTo = [
+      s2.Payment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Payment"
+    queryable = true
+  }
+  s2.Lookup RefundId {
+    apiName = "RefundLinePayment.RefundId"
+    label = "Refund ID"
+    _required = true
+    referenceTo = [
+      s2.Refund,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Refund"
+    queryable = true
+  }
+  s2.Currency Amount {
+    apiName = "RefundLinePayment.Amount"
+    label = "Amount"
+    _required = true
+    createable = true
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  s2.Picklist Type {
+    apiName = "RefundLinePayment.Type"
+    label = "Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Applied"
+        default = false
+        label = "Applied"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Picklist HasBeenUnapplied {
+    apiName = "RefundLinePayment.HasBeenUnapplied"
+    label = "Has Been Unapplied"
+    _required = true
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.LongTextArea Comments {
+    apiName = "RefundLinePayment.Comments"
+    label = "Comments"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
+  }
+  s2.DateTime Date {
+    apiName = "RefundLinePayment.Date"
+    label = "Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime AppliedDate {
+    apiName = "RefundLinePayment.AppliedDate"
+    label = "Applied Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime EffectiveDate {
+    apiName = "RefundLinePayment.EffectiveDate"
+    label = "Effective Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.DateTime UnappliedDate {
+    apiName = "RefundLinePayment.UnappliedDate"
+    label = "Unapplied Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  s2.Lookup AssociatedAccountId {
+    apiName = "RefundLinePayment.AssociatedAccountId"
+    label = "Account ID"
+    referenceTo = [
+      s2.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "AssociatedAccount"
+    queryable = true
+  }
+  s2.Lookup AssociatedRefundLinePaymentId {
+    apiName = "RefundLinePayment.AssociatedRefundLinePaymentId"
+    label = "Refund Line Payment ID"
+    referenceTo = [
+      s2.RefundLinePayment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "AssociatedRefundLinePayment"
+    queryable = true
+  }
+  s2.Summary ImpactAmount {
+    apiName = "RefundLinePayment.ImpactAmount"
+    label = "Impact Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Summary EffectiveImpactAmount {
+    apiName = "RefundLinePayment.EffectiveImpactAmount"
+    label = "Effective Impact Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Currency RefundBalance {
+    apiName = "RefundLinePayment.RefundBalance"
+    label = "Refund Balance"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Currency PaymentBalance {
+    apiName = "RefundLinePayment.PaymentBalance"
+    label = "Payment Balance"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+}

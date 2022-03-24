@@ -1,0 +1,6 @@
+s2.SharingRules ExternalEventMapping {
+  fullName = "ExternalEventMapping"
+  _parent = [
+    s2.ExternalEventMapping,
+  ]
+}

@@ -1,0 +1,307 @@
+type s2.Location {
+  serviceid Id {
+    apiName = "Location.Id"
+    label = "Location ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Lookup OwnerId {
+    apiName = "Location.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      s2.Group,
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "Location.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Text Name {
+    apiName = "Location.Name"
+    label = "Location Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "Location.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "Location.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "Location.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "Location.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "Location.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Picklist LocationType {
+    apiName = "Location.LocationType"
+    label = "Location Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Building"
+        default = false
+        label = "Building"
+        isActive = true
+      },
+      {
+        fullName = "Warehouse"
+        default = false
+        label = "Warehouse"
+        isActive = true
+      },
+      {
+        fullName = "Site"
+        default = false
+        label = "Site"
+        isActive = true
+      },
+      {
+        fullName = "Plant"
+        default = false
+        label = "Plant"
+        isActive = true
+      },
+      {
+        fullName = "Store"
+        default = false
+        label = "Store"
+        isActive = true
+      },
+      {
+        fullName = "Campus"
+        default = false
+        label = "Campus"
+        isActive = true
+      },
+      {
+        fullName = "Floor"
+        default = false
+        label = "Floor"
+        isActive = true
+      },
+      {
+        fullName = "Space"
+        default = false
+        label = "Space"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  s2.Checkbox IsMobile {
+    apiName = "Location.IsMobile"
+    label = "Mobile Location"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Checkbox IsInventoryLocation {
+    apiName = "Location.IsInventoryLocation"
+    label = "Inventory Location"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Lookup RootLocationId {
+    apiName = "Location.RootLocationId"
+    label = "Root Location ID"
+    referenceTo = [
+      s2.Location,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "RootLocation"
+    queryable = true
+    trackHistory = false
+    _hidden_value = true
+  }
+  s2.Text ExternalReference {
+    apiName = "Location.ExternalReference"
+    label = "External Reference"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  s2.Lookup LogoId {
+    apiName = "Location.LogoId"
+    label = "Asset File ID"
+    referenceTo = [
+      "ContentAsset",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Logo"
+    queryable = true
+    trackHistory = false
+  }
+  s2.Unknown CloseDate {
+    apiName = "Location.CloseDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown ConstructionEndDate {
+    apiName = "Location.ConstructionEndDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown ConstructionStartDate {
+    apiName = "Location.ConstructionStartDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown Description {
+    apiName = "Location.Description"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown DrivingDirections {
+    apiName = "Location.DrivingDirections"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown Location {
+    apiName = "Location.Location"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown LocationLevel {
+    apiName = "Location.LocationLevel"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown OpenDate {
+    apiName = "Location.OpenDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown PossessionDate {
+    apiName = "Location.PossessionDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown RemodelEndDate {
+    apiName = "Location.RemodelEndDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown RemodelStartDate {
+    apiName = "Location.RemodelStartDate"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown ShouldSyncWithOci {
+    apiName = "Location.ShouldSyncWithOci"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  s2.Unknown TimeZone {
+    apiName = "Location.TimeZone"
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

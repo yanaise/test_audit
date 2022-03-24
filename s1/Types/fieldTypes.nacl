@@ -1,0 +1,1632 @@
+type s1.FormulaTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaText is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean unique {
+    }
+    boolean caseSensitive {
+    }
+    s1.TextLength length {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaPercent is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaNumber is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    boolean unique {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaDateTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaDate is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaCurrency is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.FormulaCheckbox is boolean {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean defaultValue {
+    }
+    string formula {
+    }
+    s1.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type s1.Geolocation {
+  annotations {
+    boolean displayLocationInDecimal {
+    }
+    number scale {
+    }
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+}
+type s1.Name2 {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+  string FirstName {
+  }
+  string LastName {
+  }
+  string MiddleName {
+  }
+  string Suffix {
+  }
+}
+type s1.Name {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+  string FirstName {
+  }
+  string LastName {
+  }
+  s1.Picklist Salutation {
+  }
+  string MiddleName {
+  }
+  string Suffix {
+  }
+}
+type s1.Address {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+  string city {
+  }
+  string country {
+  }
+  s1.Picklist geocodeAccuracy {
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+  string postalCode {
+  }
+  string state {
+  }
+  s1.TextArea street {
+  }
+}
+type s1.AnyType is unknown {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+}
+type s1.Unknown is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+}
+type s1.Summary is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string summarizedField {
+    }
+    "List<s1.summaryFilterItems>" summaryFilterItems {
+    }
+    string summaryForeignKey {
+    }
+    s1.summaryOperation summaryOperation {
+    }
+  }
+}
+type s1.MasterDetail is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean reparentableMasterDetail {
+    }
+    boolean writeRequiresMasterRead {
+    }
+    s1.LookupFilter lookupFilter {
+    }
+    string referenceTo {
+    }
+    s1.RelationshipOrder relationshipOrder {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+  }
+}
+type s1.Lookup is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string referenceTo {
+    }
+    s1.LookupFilter lookupFilter {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
+    }
+  }
+}
+type s1.Url is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.EncryptedText is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    s1.maskChar maskChar {
+    }
+    s1.maskType maskType {
+    }
+    s1.EncryptedTextLength length {
+    }
+  }
+}
+type s1.TextArea is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Html is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    s1.RichTextAreaVisibleLines visibleLines {
+    }
+    s1.TextAreaLength length {
+    }
+  }
+}
+type s1.LongTextArea is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    s1.LongTextAreaVisibleLines visibleLines {
+    }
+    s1.TextAreaLength length {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Phone is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Percent is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Email is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean unique {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.MultiselectPicklist is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    s1.MultiPicklistVisibleLines visibleLines {
+    }
+    s1.FieldDependency fieldDependency {
+    }
+    s1.valueSet valueSet {
+    }
+    boolean restricted {
+    }
+    string valueSetName {
+    }
+    boolean sorted {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Picklist is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    s1.FieldDependency fieldDependency {
+    }
+    "List<s1.valueSet>" valueSet {
+    }
+    boolean restricted {
+    }
+    string valueSetName {
+    }
+    boolean sorted {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Currency is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.DateTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Time is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Date is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Checkbox is boolean {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean defaultValue {
+    }
+  }
+}
+type s1.AutoNumber is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    string displayFormat {
+    }
+  }
+}
+type s1.Number is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    boolean unique {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type s1.Text is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    s1.businessStatus businessStatus {
+    }
+    s1.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    boolean unique {
+    }
+    boolean caseSensitive {
+    }
+    s1.TextLength length {
+    }
+    string defaultValueFormula {
+    }
+  }
+}

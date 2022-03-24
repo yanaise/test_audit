@@ -1,0 +1,29 @@
+type s2.StrategyNodeMap {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childNode {
+  }
+  string description {
+  }
+  string label {
+  }
+  string name {
+  }
+  number limit {
+  }
+  s2.MapExpression mapExpression {
+  }
+  metadataType = "StrategyNodeMap"
+}

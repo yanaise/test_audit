@@ -1,0 +1,4 @@
+s2.SourceTrackingSettings {
+  fullName = "SourceTracking"
+  enableSourceTrackingSandboxes = "false"
+}

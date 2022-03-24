@@ -1,0 +1,10 @@
+s2.Role VPMarketing {
+  fullName = "VPMarketing"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "VP, Marketing"
+  mayForecastManagerShare = false
+  name = "VP, Marketing"
+  opportunityAccessLevel = "Edit"
+  parentRole = s2.Role.instance.SVPSalesMarketing
+}

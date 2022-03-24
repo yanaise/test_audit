@@ -1,0 +1,67 @@
+type s2.ConnectedApp {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  s2.ConnectedAppAttribute attributes {
+  }
+  s2.CanvasMetadata canvas {
+  }
+  s2.ConnectedAppCanvasConfig canvasConfig {
+  }
+  string contactEmail {
+  }
+  string contactPhone {
+  }
+  string description {
+  }
+  string iconUrl {
+  }
+  string infoUrl {
+  }
+  s2.ConnectedAppIpRange ipRanges {
+  }
+  string label {
+  }
+  string logoUrl {
+  }
+  s2.ConnectedAppMobileDetailConfig mobileAppConfig {
+  }
+  string mobileStartUrl {
+  }
+  s2.ConnectedAppOauthConfig oauthConfig {
+  }
+  s2.ConnectedAppOauthPolicy oauthPolicy {
+  }
+  string permissionSetName {
+  }
+  string plugin {
+  }
+  string profileName {
+  }
+  s2.ConnectedAppSamlConfig samlConfig {
+  }
+  s2.ConnectedAppSessionPolicy sessionPolicy {
+  }
+  string startUrl {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "connectedApp"
+  dirName = "connectedApps"
+  metadataType = "ConnectedApp"
+}

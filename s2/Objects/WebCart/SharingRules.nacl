@@ -1,0 +1,6 @@
+s2.SharingRules WebCart {
+  fullName = "WebCart"
+  _parent = [
+    s2.WebCart,
+  ]
+}

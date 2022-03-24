@@ -1,0 +1,46 @@
+type s2.FlowAssignment {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  string description {
+  }
+  string name {
+  }
+  string elementSubtype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FilterCollectionProcessor",
+        "RecommendationMapCollectionProcessor",
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  string label {
+  }
+  number locationX {
+  }
+  number locationY {
+  }
+  "List<s2.FlowAssignmentItem>" assignmentItems {
+  }
+  s2.FlowConnector connector {
+  }
+  metadataType = "FlowAssignment"
+}

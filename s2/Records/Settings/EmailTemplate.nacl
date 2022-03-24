@@ -1,0 +1,4 @@
+s2.EmailTemplateSettings {
+  fullName = "EmailTemplate"
+  enableTemplateEnhancedFolderPref = false
+}

@@ -1,0 +1,79 @@
+s2.Layout AssociatedLocation_Associated_Location_Layout@bss {
+  fullName = "AssociatedLocation-Associated Location Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssociatedLocation.field.AssociatedLocationNumber
+            },
+            {
+              behavior = "Required"
+              field = s2.AssociatedLocation.field.LocationId
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssociatedLocation.field.ActiveFrom
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.AssociatedLocation.field.ParentRecordId
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssociatedLocation.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = s2.AssociatedLocation.field.ActiveTo
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.AssociatedLocation.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = s2.AssociatedLocation.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.AssociatedLocation,
+  ]
+}

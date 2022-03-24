@@ -1,0 +1,6 @@
+s2.SharingRules DataUsePurpose {
+  fullName = "DataUsePurpose"
+  _parent = [
+    s2.DataUsePurpose,
+  ]
+}

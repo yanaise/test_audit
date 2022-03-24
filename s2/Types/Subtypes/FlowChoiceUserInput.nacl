@@ -1,0 +1,25 @@
+type s2.FlowChoiceUserInput {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.FlowMetadataValue processMetadataValues {
+  }
+  boolean isRequired {
+  }
+  string promptText {
+  }
+  s2.FlowInputValidationRule validationRule {
+  }
+  metadataType = "FlowChoiceUserInput"
+}

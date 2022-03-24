@@ -1,0 +1,6 @@
+s2.SharingRules CommSubscription {
+  fullName = "CommSubscription"
+  _parent = [
+    s2.CommSubscription,
+  ]
+}

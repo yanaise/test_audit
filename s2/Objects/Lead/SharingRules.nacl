@@ -1,0 +1,6 @@
+s2.SharingRules Lead {
+  fullName = "Lead"
+  _parent = [
+    s2.Lead,
+  ]
+}

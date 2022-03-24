@@ -1,0 +1,126 @@
+type s2.AssignedResource {
+  serviceid Id {
+    apiName = "AssignedResource.Id"
+    label = "Assigned Resource ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  s2.Checkbox IsDeleted {
+    apiName = "AssignedResource.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.AutoNumber AssignedResourceNumber {
+    apiName = "AssignedResource.AssignedResourceNumber"
+    label = "Assigned Resource Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime CreatedDate {
+    apiName = "AssignedResource.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup CreatedById {
+    apiName = "AssignedResource.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime LastModifiedDate {
+    apiName = "AssignedResource.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup LastModifiedById {
+    apiName = "AssignedResource.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      s2.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  s2.DateTime SystemModstamp {
+    apiName = "AssignedResource.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  s2.Lookup ServiceAppointmentId {
+    apiName = "AssignedResource.ServiceAppointmentId"
+    label = "Service Appointment ID"
+    _required = true
+    referenceTo = [
+      s2.ServiceAppointment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ServiceAppointment"
+    queryable = true
+  }
+  s2.Lookup ServiceResourceId {
+    apiName = "AssignedResource.ServiceResourceId"
+    label = "Service Resource ID"
+    _required = true
+    referenceTo = [
+      s2.ServiceResource,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceResource"
+    queryable = true
+  }
+  s2.Checkbox IsRequiredResource {
+    apiName = "AssignedResource.IsRequiredResource"
+    label = "Required Resource"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Picklist Role {
+    apiName = "AssignedResource.Role"
+    label = "Role"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  s2.Lookup EventId {
+    apiName = "AssignedResource.EventId"
+    label = "Activity ID"
+    referenceTo = [
+      s2.Event,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Event"
+    queryable = true
+    _hidden_value = true
+  }
+}

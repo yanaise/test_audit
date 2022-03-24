@@ -1,0 +1,8 @@
+s2.ListView Account_AllAccounts {
+  fullName = "Account.AllAccounts"
+  filterScope = "Everything"
+  label = "All Accounts"
+  _parent = [
+    s2.Account,
+  ]
+}

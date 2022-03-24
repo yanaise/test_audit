@@ -1,0 +1,6 @@
+s2.SharingRules MessagingEndUser {
+  fullName = "MessagingEndUser"
+  _parent = [
+    s2.MessagingEndUser,
+  ]
+}

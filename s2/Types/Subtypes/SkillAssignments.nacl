@@ -1,0 +1,21 @@
+type s2.SkillAssignments {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  s2.SkillProfileAssignments profiles {
+  }
+  s2.SkillUserAssignments users {
+  }
+  metadataType = "SkillAssignments"
+}

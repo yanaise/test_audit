@@ -1,0 +1,9 @@
+s2.ChatterEmailsMDSettings {
+  fullName = "ChatterEmailsMD"
+  enableChatterDigestEmailsApiOnly = "false"
+  enableChatterEmailAttachment = "true"
+  enableCollaborationEmail = "true"
+  enableDisplayAppDownloadBadges = "true"
+  enableEmailReplyToChatter = "true"
+  enableEmailToChatter = "true"
+}

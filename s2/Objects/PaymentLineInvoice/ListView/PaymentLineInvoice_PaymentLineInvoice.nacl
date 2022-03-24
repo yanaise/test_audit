@@ -1,0 +1,8 @@
+s2.ListView PaymentLineInvoice_PaymentLineInvoice {
+  fullName = "PaymentLineInvoice.PaymentLineInvoice"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    s2.PaymentLineInvoice,
+  ]
+}

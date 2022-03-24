@@ -1,0 +1,4 @@
+s2.StandardValueSet WorkOrderPriority {
+  fullName = "WorkOrderPriority"
+  sorted = false
+}

@@ -1,0 +1,45 @@
+type s2.EmbeddedServiceMenuSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string branding {
+    foreignKeyDomain = [
+      s2.BrandingSet,
+    ]
+  }
+  s2.EmbeddedServiceCustomLabel embeddedServiceCustomLabels {
+  }
+  s2.EmbeddedServiceCustomization embeddedServiceCustomizations {
+  }
+  s2.EmbeddedServiceMenuItem embeddedServiceMenuItems {
+  }
+  boolean isEnabled {
+  }
+  string masterLabel {
+  }
+  string site {
+    foreignKeyDomain = [
+      s2.CustomSite,
+    ]
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "EmbeddedServiceMenuSettings"
+  dirName = "EmbeddedServiceMenuSettings"
+  metadataType = "EmbeddedServiceMenuSettings"
+}

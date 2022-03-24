@@ -1,0 +1,17 @@
+s1.ConnectedApp whatever {
+  fullName = "whatever"
+  contactEmail = "yanai.sened@salto.io"
+  label = "Whatever asdslkjlk"
+  oauthConfig = {
+    callbackUrl = "http://localhost:8080"
+    consumerKey = "3MVG9l2zHsylwlpSWZdiMzIJXeSvfFWNgW8Vdd_X2eoBeAwPiH2bWYYlLOOM36wdAAFtiPZNlUwtP6_VKVEX6"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = "Full"
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

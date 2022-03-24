@@ -1,0 +1,218 @@
+s2.Layout Task_Task_Layout@bs {
+  fullName = "Task-Task Layout"
+  emailDefault = false
+  headers = [
+    "PersonalTagging",
+    "PublicTagging",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Task Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.Task.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = s2.Task.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = s2.Task.field.ActivityDate
+            },
+            {
+              behavior = "Readonly"
+              field = s2.Task.field.Phone
+            },
+            {
+              behavior = "Required"
+              field = s2.Task.field.Priority
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = s2.Task.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = s2.Task.field.WhoId
+            },
+            {
+              behavior = "Edit"
+              field = s2.Task.field.WhatId
+            },
+            {
+              behavior = "Readonly"
+              field = s2.Task.field.Email
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Other Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.Task.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = s2.Task.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = s2.Task.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentPost"
+      },
+      {
+        quickActionName = "FeedItem.LinkPost"
+      },
+      {
+        quickActionName = "FeedItem.PollPost"
+      },
+      {
+        quickActionName = "FeedItem.TextPost"
+      },
+      {
+        quickActionName = s2.QuickAction.instance.LogACall
+      },
+      {
+        quickActionName = s2.QuickAction.instance.NewEvent
+      },
+      {
+        quickActionName = s2.QuickAction.instance.NewTask
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_Defer@v
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_Defer_0@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_Defer_1@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_EditDescription@v
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_EditDescription_0@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_EditDescription_1@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdatePriority@v
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdatePriority_0@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdatePriority_1@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdateStatus@v
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdateStatus_0@vu
+      },
+      {
+        quickActionName = s2.QuickAction.instance.Task_UpdateStatus_1@vu
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = s2.Task.field.WhoId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = s2.Task.field.WhatId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedActivityAttachmentList"
+    },
+  ]
+  relatedObjects = [
+    "WhoId",
+    "WhatId",
+  ]
+  runAssignmentRulesDefault = false
+  showEmailCheckbox = true
+  showRunAssignmentRulesCheckbox = true
+  showSubmitAndAttachButton = false
+  _parent = [
+    s2.Task,
+  ]
+}

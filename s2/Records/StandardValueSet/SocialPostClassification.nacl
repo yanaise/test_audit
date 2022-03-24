@@ -1,0 +1,4 @@
+s2.StandardValueSet SocialPostClassification {
+  fullName = "SocialPostClassification"
+  sorted = false
+}

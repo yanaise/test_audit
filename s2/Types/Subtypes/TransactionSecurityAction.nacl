@@ -1,0 +1,27 @@
+type s2.TransactionSecurityAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean block {
+  }
+  boolean endSession {
+  }
+  boolean freezeUser {
+  }
+  s2.TransactionSecurityNotification notifications {
+  }
+  boolean twoFactorAuthentication {
+  }
+  metadataType = "TransactionSecurityAction"
+}

@@ -1,0 +1,8 @@
+s2.ListView CardPaymentMethod_CardPaymentMethod {
+  fullName = "CardPaymentMethod.CardPaymentMethod"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    s2.CardPaymentMethod,
+  ]
+}

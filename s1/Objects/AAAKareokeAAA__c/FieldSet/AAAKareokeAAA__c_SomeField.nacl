@@ -1,6 +1,6 @@
 s1.FieldSet AAAKareokeAAA__c_SomeField {
   fullName = "AAAKareokeAAA__c.SomeField"
-  description = "What's up? woah woah woah"
+  description = "What's up? woah woah woah2"
   label = "SomeField"
   _parent = [
     s1.AAAKareokeAAA__c,
